@@ -5,7 +5,7 @@
 
     <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
     <title>
         Riyadh Epoxy and Painting | Epoxy Flooring & Painting Services in Riyadh
@@ -163,6 +163,8 @@
     padding: 0;
 
     box-sizing: border-box;
+
+    -webkit-tap-highlight-color: transparent;
 }
 
 
@@ -171,6 +173,19 @@ html {
     scroll-behavior: smooth;
 
     scroll-padding-top: 90px;
+
+    -webkit-text-size-adjust: 100%;
+
+    text-size-adjust: 100%;
+}
+
+
+html,
+body {
+
+    max-width: 100%;
+
+    overflow-x: hidden;
 }
 
 
@@ -186,10 +201,14 @@ body {
     color: var(--text);
 
     line-height: 1.7;
+
+    font-size: 16px;
 }
 
 
 img {
+
+    max-width: 100%;
 
     width: 100%;
 
@@ -316,6 +335,8 @@ header {
     align-items: center;
 
     gap: 12px;
+
+    min-width: 0;
 }
 
 
@@ -324,6 +345,8 @@ header {
     width: 48px;
 
     height: 48px;
+
+    min-width: 48px;
 
     object-fit: contain;
 
@@ -340,6 +363,8 @@ header {
     font-weight: 800;
 
     line-height: 1.15;
+
+    white-space: nowrap;
 }
 
 
@@ -356,6 +381,8 @@ header {
     letter-spacing: 1px;
 
     margin-top: 3px;
+
+    white-space: nowrap;
 }
 
 
@@ -429,7 +456,15 @@ nav a:hover::after {
 
     font-size: 28px;
 
+    line-height: 1;
+
     cursor: pointer;
+
+    padding: 8px;
+
+    min-width: 44px;
+
+    min-height: 44px;
 }
 
 
@@ -477,7 +512,7 @@ nav a:hover::after {
 
     gap: 10px;
 
-    z-index: 9999;
+    z-index: 900;
 }
 
 
@@ -577,6 +612,8 @@ nav a:hover::after {
     z-index: 2;
 
     max-width: 940px;
+
+    width: 100%;
 }
 
 
@@ -609,11 +646,13 @@ nav a:hover::after {
 .hero h1 {
 
     font-size:
-        clamp(40px,6vw,66px);
+        clamp(32px,6vw,66px);
 
-    line-height: 1.08;
+    line-height: 1.15;
 
     margin-bottom: 22px;
+
+    word-wrap: break-word;
 }
 
 
@@ -670,6 +709,8 @@ nav a:hover::after {
     font-size: 14px;
 
     transition: .3s;
+
+    min-height: 44px;
 }
 
 
@@ -717,6 +758,8 @@ nav a:hover::after {
 section {
 
     padding: 90px 6%;
+
+    overflow: hidden;
 }
 
 
@@ -751,11 +794,13 @@ section {
     color: var(--navy);
 
     font-size:
-        clamp(30px,4vw,42px);
+        clamp(26px,4vw,42px);
 
-    line-height: 1.2;
+    line-height: 1.25;
 
     margin-bottom: 12px;
+
+    word-wrap: break-word;
 }
 
 
@@ -943,13 +988,15 @@ section {
     color: var(--navy);
 
     font-size:
-        clamp(32px,4vw,46px);
+        clamp(28px,4vw,46px);
 
-    line-height: 1.2;
+    line-height: 1.25;
 
     margin-bottom: 22px;
 
     text-align: center;
+
+    word-wrap: break-word;
 }
 
 
@@ -1026,7 +1073,7 @@ section {
 
 .experience-box {
 
-    padding: 20px;
+    padding: 20px 10px;
 
     border-radius: 10px;
 
@@ -1331,9 +1378,12 @@ section {
 
     color: var(--navy);
 
-    font-size: 30px;
+    font-size:
+        clamp(24px,4vw,30px);
 
     margin-bottom: 15px;
+
+    word-wrap: break-word;
 }
 
 
@@ -1439,6 +1489,8 @@ section {
     color: var(--text);
 
     outline: none;
+
+    font-size: 16px;
 }
 
 
@@ -1491,6 +1543,8 @@ section {
     gap: 9px;
 
     transition: .3s;
+
+    min-height: 48px;
 }
 
 
@@ -1543,11 +1597,14 @@ section {
 
     color: var(--navy);
 
-    font-size: 40px;
+    font-size:
+        clamp(28px,4.5vw,40px);
 
-    line-height: 1.2;
+    line-height: 1.25;
 
     margin-bottom: 12px;
+
+    word-wrap: break-word;
 }
 
 
@@ -1593,6 +1650,12 @@ section {
 }
 
 
+.contact-item div:not(.contact-icon) {
+
+    min-width: 0;
+}
+
+
 .contact-item strong {
 
     display: block;
@@ -1608,6 +1671,8 @@ section {
     color: var(--muted);
 
     font-size: 14px;
+
+    word-break: break-word;
 }
 
 
@@ -1754,7 +1819,7 @@ footer p {
 
 
 /* =========================================================
-   TABLET
+   TABLET (LARGE)
 ========================================================= */
 
 @media (max-width:1100px) {
@@ -1775,6 +1840,41 @@ footer p {
 
         grid-template-columns:
             repeat(2,1fr);
+    }
+
+}
+
+
+/* =========================================================
+   TABLET (SMALL) / LARGE MOBILE
+========================================================= */
+
+@media (max-width:900px) {
+
+    .contact-grid {
+
+        grid-template-columns:
+            1fr;
+
+        gap: 35px;
+    }
+
+    .contact-info {
+
+        text-align: center;
+
+        align-items: center;
+    }
+
+    .contact-item {
+
+        text-align: left;
+    }
+
+    .map,
+    .map iframe {
+
+        min-height: 320px;
     }
 
 }
@@ -1822,6 +1922,10 @@ footer p {
 
         box-shadow:
             0 15px 25px rgba(0,0,0,.18);
+
+        max-height: calc(100vh - 70px);
+
+        overflow-y: auto;
     }
 
 
@@ -1833,7 +1937,9 @@ footer p {
 
     nav a {
 
-        padding: 13px 0;
+        padding: 15px 4px;
+
+        font-size: 15px;
 
         border-bottom:
             1px solid
@@ -1843,9 +1949,9 @@ footer p {
 
     .hero {
 
-        min-height: 82vh;
+        min-height: auto;
 
-        padding: 60px 20px;
+        padding: 70px 20px 60px;
     }
 
 
@@ -1857,11 +1963,24 @@ footer p {
 
     section {
 
-        padding: 70px 5%;
+        padding: 60px 5%;
+    }
+
+
+    .section-title {
+
+        margin-bottom: 36px;
     }
 
 
     .about-list {
+
+        grid-template-columns:
+            1fr 1fr;
+    }
+
+
+    .experience {
 
         grid-template-columns:
             1fr 1fr;
@@ -1875,10 +1994,18 @@ footer p {
     }
 
 
-    .contact-grid {
+    .service-grid,
+    .project-grid,
+    .why-grid {
 
         grid-template-columns:
             1fr;
+    }
+
+
+    .project {
+
+        height: 300px;
     }
 
 }
@@ -1895,12 +2022,14 @@ footer p {
         width: 41px;
 
         height: 41px;
+
+        min-width: 41px;
     }
 
 
     .logo {
 
-        font-size: 16px;
+        font-size: 15px;
     }
 
 
@@ -1910,23 +2039,25 @@ footer p {
     }
 
 
-    .hero h1 {
-
-        font-size: 35px;
-    }
-
-
     .hero-badge {
 
         font-size: 9px;
 
-        letter-spacing: .8px;
+        letter-spacing: .5px;
+
+        padding: 7px 12px;
+
+        line-height: 1.5;
+
+        white-space: normal;
     }
 
 
     .hero-buttons {
 
         width: 100%;
+
+        flex-direction: column;
     }
 
 
@@ -1938,50 +2069,21 @@ footer p {
     }
 
 
-    .service-grid {
-
-        grid-template-columns:
-            1fr;
-    }
-
-
     .service-image {
 
-        height: 230px;
-    }
-
-
-    .project-grid {
-
-        grid-template-columns:
-            1fr;
-    }
-
-
-    .why-grid {
-
-        grid-template-columns:
-            1fr;
-    }
-
-
-    .about-list {
-
-        grid-template-columns:
-            1fr;
-    }
-
-
-    .experience {
-
-        grid-template-columns:
-            1fr;
+        height: 210px;
     }
 
 
     .quote-box {
 
-        padding: 25px 18px;
+        padding: 22px 16px;
+    }
+
+
+    .contact-info h2 {
+
+        font-size: 26px;
     }
 
 
@@ -2012,7 +2114,7 @@ footer p {
     .map,
     .map iframe {
 
-        min-height: 330px;
+        min-height: 260px;
     }
 
 
@@ -2021,6 +2123,50 @@ footer p {
         right: 12px;
 
         bottom: 15px;
+    }
+
+}
+
+
+/* =========================================================
+   EXTRA SMALL MOBILE
+========================================================= */
+
+@media (max-width:400px) {
+
+    .logo {
+
+        font-size: 13px;
+    }
+
+
+    .logo span {
+
+        display: none;
+    }
+
+
+    .about-list {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .experience {
+
+        grid-template-columns: 1fr;
+    }
+
+
+    .why-grid {
+
+        gap: 12px;
+    }
+
+
+    .why-card {
+
+        padding: 22px 14px;
     }
 
 }
