@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ar" dir="rtl">
 
 <head>
 
@@ -8,14 +8,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>
-        Painting & Finishing Services in Riyadh | Riyadh Epoxy and Painting
+        خدمات الدهان والتشطيب في الرياض | الرياض ابوكسي والدهانات
     </title>
 
     <meta name="description"
-        content="Explore professional epoxy flooring, interior painting, exterior painting, wall decoration, interior finishing, decorative painting, villa painting, commercial painting and waterproof coating services in Riyadh, Saudi Arabia.">
+        content="تعرف على خدماتنا الاحترافية في أرضيات الايبوكسي والدهان الداخلي والخارجي والديكور الجداري والتشطيب الداخلي والدهان الديكوري ودهان الفلل والدهان التجاري وطلاءات العزل المائي في الرياض، المملكة العربية السعودية.">
 
     <meta name="keywords"
-        content="epoxy flooring Riyadh, painting services Riyadh, interior painting Riyadh, exterior painting Riyadh, wall decoration Riyadh, villa painting Riyadh, commercial painting Riyadh, waterproof painting Riyadh, decorative painting Riyadh, interior finishing Riyadh">
+        content="أرضيات ايبوكسي الرياض، دهانات الرياض، دهانات داخلية الرياض، دهانات خارجية الرياض، ديكورات جدارية الرياض، دهان فلل الرياض، دهان تجاري الرياض, epoxy flooring Riyadh, painting services Riyadh">
 
     <meta name="robots" content="index, follow">
 
@@ -24,7 +24,7 @@
     <meta name="theme-color" content="#102b3f">
 
     <link rel="canonical"
-        href="https://riyadh-epoxy-painting.vercel.app/blocks.html">
+        href="https://riyadh-epoxy-painting.vercel.app/blogs.html">
 
 
     <!-- FAVICON -->
@@ -37,19 +37,22 @@
     <!-- OPEN GRAPH -->
 
     <meta property="og:title"
-        content="Painting & Finishing Services in Riyadh">
+        content="خدمات الدهان والتشطيب في الرياض">
 
     <meta property="og:description"
-        content="Professional epoxy flooring, painting, wall decoration and finishing services in Riyadh, Saudi Arabia.">
+        content="خدمات احترافية في أرضيات الايبوكسي والدهان والديكور الجداري والتشطيب في الرياض، المملكة العربية السعودية.">
 
     <meta property="og:type"
         content="website">
 
     <meta property="og:url"
-        content="https://riyadh-epoxy-painting.vercel.app/blocks.html">
+        content="https://riyadh-epoxy-painting.vercel.app/blogs.html">
 
     <meta property="og:image"
         content="https://riyadh-epoxy-painting.vercel.app/blog1.jpg">
+
+    <meta property="og:locale" content="ar_SA">
+    <meta property="og:locale:alternate" content="en_US">
 
 
     <!-- TWITTER -->
@@ -58,13 +61,27 @@
         content="summary_large_image">
 
     <meta name="twitter:title"
-        content="Painting & Finishing Services in Riyadh">
+        content="خدمات الدهان والتشطيب في الرياض">
 
     <meta name="twitter:description"
-        content="Explore professional painting, epoxy flooring, wall decoration and finishing services in Riyadh.">
+        content="خدمات احترافية في الدهان وأرضيات الايبوكسي والديكور الجداري والتشطيب في الرياض.">
 
     <meta name="twitter:image"
         content="https://riyadh-epoxy-painting.vercel.app/blog1.jpg">
+
+
+    <!-- FONTS -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700;800&family=Inter:wght@400;500;600;700&family=Tajawal:wght@400;500;700;800&display=swap"
+        rel="stylesheet">
 
 
     <!-- STRUCTURED DATA -->
@@ -76,7 +93,7 @@
         "@type": "CollectionPage",
         "name": "Painting & Finishing Services in Riyadh",
         "description": "Professional painting, epoxy flooring, wall decoration and finishing services in Riyadh, Saudi Arabia.",
-        "url": "https://riyadh-epoxy-painting.vercel.app/blocks.html",
+        "url": "https://riyadh-epoxy-painting.vercel.app/blogs.html",
         "publisher": {
             "@type": "ProfessionalService",
             "name": "Riyadh Epoxy and Painting",
@@ -129,6 +146,9 @@
 
     --shadow-hover:
         0 20px 45px rgba(16,43,63,0.17);
+
+    --font-head:'Tajawal',Arial,sans-serif;
+    --font-body:'Tajawal',Arial,sans-serif;
 }
 
 
@@ -151,18 +171,45 @@ html {
 }
 
 
+html,
+body{
+    max-width:100%;
+    overflow-x:hidden;
+}
+
+
 body {
 
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
+    font-family: var(--font-body);
 
     background: var(--cream);
 
     color: var(--text);
 
     line-height: 1.7;
+
+    transition:background .3s;
+}
+
+
+body[dir="ltr"]{
+    font-family:'Inter',Arial,sans-serif;
+}
+
+
+body[dir="ltr"] h1,
+body[dir="ltr"] h2,
+body[dir="ltr"] h3,
+body[dir="ltr"] .logo{
+    font-family:'Poppins',Arial,sans-serif;
+}
+
+
+h1,
+h2,
+h3,
+.logo{
+    font-family:var(--font-head);
 }
 
 
@@ -207,6 +254,20 @@ button:focus-visible {
     outline: 3px solid var(--gold-light);
 
     outline-offset: 3px;
+}
+
+
+@media (prefers-reduced-motion:reduce){
+
+  html{
+    scroll-behavior:auto;
+  }
+
+  *{
+    animation-duration:.001ms !important;
+    transition-duration:.001ms !important;
+  }
+
 }
 
 
@@ -314,6 +375,8 @@ header {
     align-items: center;
 
     gap: 12px;
+
+    min-width:0;
 }
 
 
@@ -322,6 +385,8 @@ header {
     width: 48px;
 
     height: 48px;
+
+    min-width:48px;
 
     object-fit: contain;
 
@@ -338,6 +403,8 @@ header {
     font-weight: 800;
 
     line-height: 1.15;
+
+    white-space:nowrap;
 }
 
 
@@ -351,9 +418,26 @@ header {
 
     font-weight: 500;
 
-    letter-spacing: 1px;
+    letter-spacing: 0;
 
     margin-top: 3px;
+
+    white-space:nowrap;
+}
+
+
+body[dir="ltr"] .logo span{
+  letter-spacing:1px;
+}
+
+
+.header-right{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:14px;
 }
 
 
@@ -363,7 +447,7 @@ nav {
 
     align-items: center;
 
-    gap: 25px;
+    gap: 23px;
 }
 
 
@@ -403,6 +487,14 @@ nav a::after {
 }
 
 
+body[dir="rtl"] nav a::after{
+
+  left:auto;
+
+  right:0;
+}
+
+
 nav a:hover {
 
     color: var(--gold-light);
@@ -412,6 +504,54 @@ nav a:hover {
 nav a:hover::after {
 
     width: 100%;
+}
+
+
+.lang-btn{
+
+  display:flex;
+
+  align-items:center;
+
+  gap:6px;
+
+  background:rgba(255,255,255,.08);
+
+  border:1px solid rgba(231,195,106,.45);
+
+  color:#fff;
+
+  font-size:13px;
+
+  font-weight:700;
+
+  padding:8px 14px;
+
+  border-radius:50px;
+
+  cursor:pointer;
+
+  transition:.25s;
+
+  white-space:nowrap;
+}
+
+
+.lang-btn:hover{
+
+  background:rgba(231,195,106,.18);
+
+  border-color:var(--gold-light);
+}
+
+
+.lang-btn svg{
+
+  width:15px;
+
+  height:15px;
+
+  flex-shrink:0;
 }
 
 
@@ -425,9 +565,17 @@ nav a:hover::after {
 
     color: white;
 
-    font-size: 28px;
+    font-size: 26px;
+
+    line-height:1;
 
     cursor: pointer;
+
+    padding:8px;
+
+    min-width:44px;
+
+    min-height:44px;
 }
 
 
@@ -452,6 +600,14 @@ nav a:hover::after {
     gap: 10px;
 
     z-index: 9999;
+}
+
+
+body[dir="ltr"] .floating-contact{
+
+  left:auto;
+
+  right:16px;
 }
 
 
@@ -572,7 +728,7 @@ nav a:hover::after {
 
     font-weight: 800;
 
-    letter-spacing: 1.4px;
+    letter-spacing: 0;
 
     margin-bottom: 20px;
 
@@ -581,14 +737,21 @@ nav a:hover::after {
 }
 
 
+body[dir="ltr"] .hero-badge{
+  letter-spacing:1.4px;
+}
+
+
 .blog-hero h1 {
 
     font-size:
-        clamp(38px,6vw,62px);
+        clamp(32px,6vw,62px);
 
-    line-height: 1.08;
+    line-height: 1.2;
 
     margin-bottom: 20px;
+
+    word-wrap:break-word;
 }
 
 
@@ -652,6 +815,8 @@ nav a:hover::after {
 section {
 
     padding: 90px 6%;
+
+    overflow:hidden;
 }
 
 
@@ -673,11 +838,16 @@ section {
 
     font-weight: 800;
 
-    letter-spacing: 1.7px;
+    letter-spacing: 0;
 
     text-transform: uppercase;
 
     margin-bottom: 7px;
+}
+
+
+body[dir="ltr"] .section-label{
+  letter-spacing:1.7px;
 }
 
 
@@ -686,11 +856,13 @@ section {
     color: var(--navy);
 
     font-size:
-        clamp(30px,4vw,43px);
+        clamp(26px,4vw,43px);
 
-    line-height: 1.2;
+    line-height: 1.3;
 
     margin-bottom: 14px;
+
+    word-wrap:break-word;
 }
 
 
@@ -910,11 +1082,13 @@ section {
 .cta h2 {
 
     font-size:
-        clamp(30px,4vw,45px);
+        clamp(26px,4vw,45px);
 
     line-height: 1.2;
 
     margin-bottom: 15px;
+
+    word-wrap:break-word;
 }
 
 
@@ -944,6 +1118,8 @@ section {
 
     padding: 14px 25px;
 
+    border:none;
+
     border-radius: 9px;
 
     margin: 5px;
@@ -953,6 +1129,10 @@ section {
     font-size: 14px;
 
     transition: .3s;
+
+    min-height:44px;
+
+    cursor:pointer;
 }
 
 
@@ -1102,6 +1282,14 @@ footer p {
 }
 
 
+body[dir="rtl"] #topBtn{
+
+  right:auto;
+
+  left:20px;
+}
+
+
 /* =========================================================
    TABLET
 ========================================================= */
@@ -1134,6 +1322,11 @@ footer p {
     }
 
 
+    .header-right{
+      gap:8px;
+    }
+
+
     nav {
 
         position: absolute;
@@ -1158,6 +1351,10 @@ footer p {
 
         box-shadow:
             0 15px 25px rgba(0,0,0,.18);
+
+        max-height:calc(100vh - 70px);
+
+        overflow-y:auto;
     }
 
 
@@ -1169,7 +1366,9 @@ footer p {
 
     nav a {
 
-        padding: 13px 0;
+        padding: 15px 4px;
+
+        font-size:15px;
 
         border-bottom:
             1px solid
@@ -1222,6 +1421,8 @@ footer p {
         width: 41px;
 
         height: 41px;
+
+        min-width:41px;
     }
 
 
@@ -1237,6 +1438,14 @@ footer p {
     }
 
 
+    .lang-btn{
+
+      font-size:12px;
+
+      padding:7px 11px;
+    }
+
+
     .blog-hero h1 {
 
         font-size: 35px;
@@ -1247,7 +1456,16 @@ footer p {
 
         font-size: 9px;
 
-        letter-spacing: .8px;
+        letter-spacing:0;
+
+        white-space:normal;
+
+        line-height:1.5;
+    }
+
+
+    body[dir="ltr"] .hero-badge{
+      letter-spacing:.8px;
     }
 
 
@@ -1285,6 +1503,14 @@ footer p {
     }
 
 
+    body[dir="ltr"] .floating-contact{
+
+      left:auto;
+
+      right:8px;
+    }
+
+
     .floating-contact a {
 
         width: 42px;
@@ -1306,6 +1532,14 @@ footer p {
         right: 12px;
 
         bottom: 15px;
+    }
+
+
+    body[dir="rtl"] #topBtn{
+
+      right:auto;
+
+      left:12px;
     }
 
 }
@@ -1332,8 +1566,8 @@ footer p {
         target="_blank"
         rel="noopener noreferrer"
         class="whatsapp"
-        aria-label="Contact us on WhatsApp"
-        title="WhatsApp">
+        aria-label="التواصل عبر واتساب"
+        title="واتساب">
 
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
 
@@ -1355,8 +1589,8 @@ footer p {
     <a
         href="tel:+966508895356"
         class="phone"
-        aria-label="Call us"
-        title="Call">
+        aria-label="اتصل بنا"
+        title="اتصال">
 
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
 
@@ -1374,8 +1608,8 @@ footer p {
     <a
         href="mailto:janiiazaz@gmail.com"
         class="email"
-        aria-label="Email us"
-        title="Email">
+        aria-label="البريد الإلكتروني"
+        title="البريد الإلكتروني">
 
         <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
 
@@ -1406,20 +1640,22 @@ footer p {
     <div class="brand">
 
         <a href="index.html"
-            style="display:flex;align-items:center;gap:12px;">
+            style="display:flex;align-items:center;gap:12px;min-width:0;">
 
             <img
                 src="logo.png"
-                alt="Riyadh Epoxy and Painting logo"
+                alt="شعار الرياض ابوكسي والدهانات"
                 width="48"
                 height="48">
 
             <div class="logo">
 
-                Riyadh Epoxy
+                <span data-i18n="brandName">
+                    الرياض ابوكسي
+                </span>
 
-                <span>
-                    PAINTING & FINISHING
+                <span data-i18n="brandSub">
+                    دهانات وتشطيبات
                 </span>
 
             </div>
@@ -1429,51 +1665,88 @@ footer p {
     </div>
 
 
-    <button
-        class="menu-btn"
-        id="menuBtn"
-        aria-label="Open navigation menu"
-        aria-expanded="false">
-
-        ☰
-
-    </button>
+    <div class="header-right">
 
 
-    <nav id="mainNav">
+        <!-- LANGUAGE BUTTON -->
 
-        <a href="index.html">
-            Home
-        </a>
+        <button
+            class="lang-btn"
+            id="langToggle"
+            type="button"
+            aria-label="تغيير اللغة">
 
-        <a href="index.html#services">
-            Services
-        </a>
+            <svg
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round">
 
-        <a href="index.html#about">
-            About Us
-        </a>
+                <circle cx="12" cy="12" r="10"></circle>
 
-        <a href="index.html#projects">
-            Our Work
-        </a>
+                <path d="M2 12h20"></path>
 
-        <a href="blocks.html"
-            style="color:var(--gold-light);">
+                <path
+                    d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10Z">
+                </path>
 
-            Blogs
+            </svg>
 
-        </a>
+            <span id="langLabel">
+                English
+            </span>
 
-        <a href="index.html#quote">
-            Free Quote
-        </a>
+        </button>
 
-        <a href="index.html#contact">
-            Contact
-        </a>
 
-    </nav>
+        <button
+            class="menu-btn"
+            id="menuBtn"
+            aria-label="فتح قائمة التنقل"
+            aria-expanded="false">
+
+            ☰
+
+        </button>
+
+
+        <nav id="mainNav">
+
+            <a href="index.html" data-i18n="navHome">
+                الرئيسية
+            </a>
+
+            <a href="index.html#services" data-i18n="navServices">
+                خدماتنا
+            </a>
+
+            <a href="index.html#about" data-i18n="navAbout">
+                من نحن
+            </a>
+
+            <a href="index.html#projects" data-i18n="navProjects">
+                أعمالنا
+            </a>
+
+            <a href="blogs.html"
+                style="color:var(--gold-light);"
+                data-i18n="navBlogs">
+                المدونة
+            </a>
+
+            <a href="index.html#quote" data-i18n="navQuote">
+                عرض سعر مجاني
+            </a>
+
+            <a href="index.html#contact" data-i18n="navContact">
+                تواصل معنا
+            </a>
+
+        </nav>
+
+    </div>
 
 </header>
 
@@ -1492,29 +1765,32 @@ footer p {
 
     <div class="blog-hero-content">
 
-        <div class="hero-badge">
+        <div class="hero-badge" data-i18n="heroBadge">
 
-            RIYADH PAINTING & FINISHING SERVICES
+            خدمات دهانات وتشطيبات في الرياض
 
         </div>
 
 
         <h1>
 
-            Our Services &
-            <span>
-                Insights
+            <span data-i18n="heroH1a">
+                خدماتنا و
+            </span>
+
+            <span class="gold" data-i18n="heroH1b">
+                معلومات مفيدة
             </span>
 
         </h1>
 
 
-        <p>
+        <p data-i18n="heroP">
 
-            Discover our professional painting, epoxy flooring,
-            wall decoration and interior finishing services
-            for villas, homes, offices and commercial properties
-            throughout Riyadh, Saudi Arabia.
+            تعرف على خدماتنا الاحترافية في الدهان وأرضيات
+            الايبوكسي والديكور الجداري والتشطيبات الداخلية
+            للفلل والمنازل والمكاتب والعقارات التجارية في
+            جميع أنحاء الرياض، المملكة العربية السعودية.
 
         </p>
 
@@ -1530,15 +1806,17 @@ footer p {
 
 <div class="breadcrumb">
 
-    <a href="index.html">
-        Home
+    <a href="index.html" data-i18n="navHome">
+        الرئيسية
     </a>
 
     <span>
         /
     </span>
 
-    Our Services & Insights
+    <span data-i18n="breadcrumbCurrent">
+        خدماتنا ومعلوماتنا
+    </span>
 
 </div>
 
@@ -1554,25 +1832,22 @@ footer p {
 
     <div class="section-title">
 
-        <div class="section-label">
-            What We Offer
+        <div class="section-label" data-i18n="servicesLabel">
+            اللي نقدمه
         </div>
 
 
-        <h2>
-            Professional Painting & Finishing Services in Riyadh
+        <h2 data-i18n="servicesH2">
+            خدمات دهانات وتشطيبات احترافية في الرياض
         </h2>
 
 
-        <p>
+        <p data-i18n="servicesP">
 
-            Riyadh Epoxy and Painting provides a range of
-            professional painting, flooring, decoration and
-            finishing solutions designed for residential and
-            commercial properties in Riyadh.
-
-            Explore our services below to learn more about
-            the solutions we provide.
+            تقدم الرياض ابوكسي والدهانات مجموعة من حلول الدهان
+            والأرضيات والديكور والتشطيب المصممة للعقارات السكنية
+            والتجارية في الرياض. تصفح خدماتنا أدناه لمعرفة المزيد
+            عن الحلول اللي نوفرها.
 
         </p>
 
@@ -1592,7 +1867,7 @@ footer p {
 
                 <img
                     src="blog1.jpg"
-                    alt="Professional epoxy flooring service in Riyadh"
+                    alt="أرضيات ايبوكسي احترافية في الرياض"
                     loading="lazy">
 
             </div>
@@ -1605,38 +1880,37 @@ footer p {
                 </span>
 
 
-                <h2>
-                    Epoxy Flooring in Riyadh
+                <h2 data-i18n="svc1Title">
+                    أرضيات ايبوكسي في الرياض
                 </h2>
 
 
-                <p>
+                <p data-i18n="svc1P1">
 
-                    Our <strong>epoxy flooring services in Riyadh</strong>
-                    provide durable, smooth and attractive flooring
-                    solutions for garages, villas, offices, workshops,
-                    shops and other commercial spaces.
-
-                </p>
-
-
-                <p>
-
-                    Epoxy coatings can create a clean and professional
-                    surface while providing resistance to everyday
-                    wear, stains and moisture. We focus on proper
-                    surface preparation and careful application to
-                    achieve a neat and long-lasting finish.
+                    تقدم خدمات <strong>أرضيات الايبوكسي في الرياض</strong>
+                    حلول أرضيات متينة وناعمة وجذابة للكراجات والفلل
+                    والمكاتب وورش العمل والمحلات والمساحات التجارية
+                    الأخرى.
 
                 </p>
 
 
-                <p>
+                <p data-i18n="svc1P2">
 
-                    Whether you need epoxy flooring for a residential
-                    garage or a commercial property, we can discuss
-                    your requirements and recommend a suitable
-                    flooring solution.
+                    تساعد طلاءات الايبوكسي على تكوين سطح نظيف
+                    واحترافي مع مقاومة جيدة للاستخدام اليومي
+                    والبقع والرطوبة. نركز على التحضير الصحيح
+                    للسطح والتطبيق الدقيق للوصول لتشطيب نظيف
+                    يدوم طويلاً.
+
+                </p>
+
+
+                <p data-i18n="svc1P3">
+
+                    سواء كنت بحاجة لأرضية ايبوكسي لكراج منزلك
+                    أو لعقار تجاري، نقدر نناقش متطلباتك ونرشح
+                    لك الحل المناسب.
 
                 </p>
 
@@ -1656,7 +1930,7 @@ footer p {
 
                 <img
                     src="blog2.jpg"
-                    alt="Interior painting service for villas and homes in Riyadh"
+                    alt="دهان داخلي للفلل والمنازل في الرياض"
                     loading="lazy">
 
             </div>
@@ -1669,37 +1943,35 @@ footer p {
                 </span>
 
 
-                <h2>
-                    Interior Painting Services
+                <h2 data-i18n="svc2Title">
+                    خدمات الدهان الداخلي
                 </h2>
 
 
-                <p>
+                <p data-i18n="svc2P1">
 
-                    We provide <strong>interior painting services in
-                    Riyadh</strong> for villas, apartments, bedrooms,
-                    living rooms, majlis, offices and other interior
-                    spaces.
-
-                </p>
-
-
-                <p>
-
-                    A professional interior paint job can refresh
-                    a space, improve its appearance and create a
-                    cleaner and more welcoming environment. Our work
-                    includes preparation, painting and finishing with
-                    attention to clean edges and an even appearance.
+                    نوفر <strong>خدمات الدهان الداخلي في الرياض</strong>
+                    للفلل والشقق وغرف النوم والصالات والمجالس
+                    والمكاتب والمساحات الداخلية الأخرى.
 
                 </p>
 
 
-                <p>
+                <p data-i18n="svc2P2">
 
-                    We can help property owners choose suitable
-                    colours and finishes according to the style and
-                    requirements of their home or business.
+                    الدهان الداخلي الاحترافي يجدد المكان ويحسّن
+                    مظهره ويعطي بيئة أنظف وأكثر ترحيباً. شغلنا
+                    يشمل التحضير والدهان والتشطيب مع الاهتمام
+                    بنظافة الحواف وتناسق المظهر.
+
+                </p>
+
+
+                <p data-i18n="svc2P3">
+
+                    نقدر نساعد أصحاب العقارات في اختيار الألوان
+                    والتشطيبات المناسبة حسب طابع وطلب المنزل
+                    أو المنشأة.
 
                 </p>
 
@@ -1719,7 +1991,7 @@ footer p {
 
                 <img
                     src="blog3.jpg"
-                    alt="Exterior villa painting service in Riyadh Saudi Arabia"
+                    alt="دهان خارجي للفلل في الرياض المملكة العربية السعودية"
                     loading="lazy">
 
             </div>
@@ -1732,36 +2004,34 @@ footer p {
                 </span>
 
 
-                <h2>
-                    Exterior Painting in Riyadh
+                <h2 data-i18n="svc3Title">
+                    الدهان الخارجي في الرياض
                 </h2>
 
 
-                <p>
+                <p data-i18n="svc3P1">
 
-                    Our <strong>exterior painting services in Riyadh</strong>
-                    are suitable for villas, residential buildings,
-                    commercial properties and outdoor surfaces.
-
-                </p>
-
-
-                <p>
-
-                    Exterior surfaces are exposed to sunlight, dust,
-                    heat and changing weather conditions. Proper
-                    preparation and the right coating can help improve
-                    the appearance and protection of exterior surfaces.
+                    خدمات <strong>الدهان الخارجي في الرياض</strong>
+                    مناسبة للفلل والمباني السكنية والعقارات
+                    التجارية والأسطح الخارجية.
 
                 </p>
 
 
-                <p>
+                <p data-i18n="svc3P2">
 
-                    We provide exterior painting solutions with
-                    attention to surface preparation, coverage,
-                    finishing quality and the overall appearance
-                    of the property.
+                    الأسطح الخارجية تتعرض للشمس والغبار والحرارة
+                    وتقلبات الطقس. التحضير الصحيح واختيار الطلاء
+                    المناسب يساعدان على تحسين مظهر وحماية الأسطح
+                    الخارجية.
+
+                </p>
+
+
+                <p data-i18n="svc3P3">
+
+                    نوفر حلول دهان خارجي مع الاهتمام بتحضير السطح
+                    والتغطية وجودة التشطيب والمظهر العام للعقار.
 
                 </p>
 
@@ -1781,7 +2051,7 @@ footer p {
 
                 <img
                     src="blog4.jpg"
-                    alt="Decorative wall finishing and feature wall design in Riyadh"
+                    alt="ديكور جداري وجدران مميزة في الرياض"
                     loading="lazy">
 
             </div>
@@ -1794,38 +2064,36 @@ footer p {
                 </span>
 
 
-                <h2>
-                    Wall Decoration & Feature Walls
+                <h2 data-i18n="svc4Title">
+                    الديكور الجداري والجدران المميزة
                 </h2>
 
 
-                <p>
+                <p data-i18n="svc4P1">
 
-                    Our <strong>wall decoration services in Riyadh</strong>
-                    help transform plain walls into attractive
-                    feature areas for villas, homes, offices and
-                    commercial interiors.
-
-                </p>
-
-
-                <p>
-
-                    Decorative wall treatments can add texture,
-                    character and visual interest to an interior.
-                    We work with different design ideas to create
-                    finishes that complement the overall style of
-                    the property.
+                    تساعد خدمات <strong>الديكور الجداري في الرياض</strong>
+                    على تحويل الجدران البسيطة إلى مساحات جذابة
+                    ومميزة للفلل والمنازل والمكاتب والمساحات
+                    التجارية.
 
                 </p>
 
 
-                <p>
+                <p data-i18n="svc4P2">
 
-                    If you are looking for modern wall decoration
-                    for a living room, majlis, entrance or feature
-                    wall, we can discuss your preferred design and
-                    finishing requirements.
+                    المعالجات الجدارية الديكورية تضيف ملمس وطابع
+                    وجاذبية بصرية للمكان الداخلي. نشتغل بأفكار
+                    تصميم مختلفة لإنشاء تشطيبات تتناسب مع الطابع
+                    العام للعقار.
+
+                </p>
+
+
+                <p data-i18n="svc4P3">
+
+                    إذا كنت تبحث عن ديكور جداري عصري لصالة أو
+                    مجلس أو مدخل أو جدار مميز، نقدر نناقش التصميم
+                    والتشطيب اللي تفضله.
 
                 </p>
 
@@ -1845,7 +2113,7 @@ footer p {
 
                 <img
                     src="blog5.jpg"
-                    alt="Professional interior finishing service in Riyadh"
+                    alt="تشطيب داخلي احترافي في الرياض"
                     loading="lazy">
 
             </div>
@@ -1858,36 +2126,35 @@ footer p {
                 </span>
 
 
-                <h2>
-                    Interior Finishing Services
+                <h2 data-i18n="svc5Title">
+                    خدمات التشطيب الداخلي
                 </h2>
 
 
-                <p>
+                <p data-i18n="svc5P1">
 
-                    Our <strong>interior finishing services in Riyadh</strong>
-                    are designed for customers who want clean,
-                    polished and visually attractive interior spaces.
-
-                </p>
-
-
-                <p>
-
-                    We pay attention to the final appearance of
-                    surfaces, including painting, decorative
-                    treatments and finishing details. Proper finishing
-                    can make a significant difference to the appearance
-                    of a newly renovated or existing property.
+                    خدمات <strong>التشطيب الداخلي في الرياض</strong>
+                    مصممة للعملاء اللي يبون مساحات داخلية نظيفة
+                    وأنيقة وجذابة بصرياً.
 
                 </p>
 
 
-                <p>
+                <p data-i18n="svc5P2">
 
-                    Our services are suitable for villas, apartments,
-                    offices, shops, reception areas, living spaces
-                    and other interiors.
+                    نهتم بالمظهر النهائي للأسطح، يشمل الدهان
+                    والمعالجات الديكورية وتفاصيل التشطيب. التشطيب
+                    الصحيح يفرق كثير في مظهر العقار سواء كان مجدد
+                    حديثاً أو قائم من قبل.
+
+                </p>
+
+
+                <p data-i18n="svc5P3">
+
+                    خدماتنا مناسبة للفلل والشقق والمكاتب والمحلات
+                    ومناطق الاستقبال والمساحات المعيشية وغيرها
+                    من المساحات الداخلية.
 
                 </p>
 
@@ -1907,7 +2174,7 @@ footer p {
 
                 <img
                     src="blog6.jpg"
-                    alt="Decorative painting and modern wall finishing in Riyadh"
+                    alt="دهان ديكوري وتشطيب جداري عصري في الرياض"
                     loading="lazy">
 
             </div>
@@ -1920,35 +2187,33 @@ footer p {
                 </span>
 
 
-                <h2>
-                    Decorative Painting
+                <h2 data-i18n="svc6Title">
+                    الدهان الديكوري
                 </h2>
 
 
-                <p>
+                <p data-i18n="svc6P1">
 
-                    <strong>Decorative painting in Riyadh</strong>
-                    can add a distinctive visual character to
-                    residential and commercial interiors.
-
-                </p>
-
-
-                <p>
-
-                    Decorative finishes can be used to highlight
-                    selected walls, create visual contrast or
-                    complement the interior design of a property.
+                    <strong>الدهان الديكوري في الرياض</strong>
+                    يقدر يضيف طابع بصري مميز للمساحات الداخلية
+                    السكنية والتجارية.
 
                 </p>
 
 
-                <p>
+                <p data-i18n="svc6P2">
 
-                    We work with customers to understand their
-                    preferred appearance and provide practical
-                    decorative painting and finishing solutions
-                    for their space.
+                    التشطيبات الديكورية تُستخدم لإبراز جدران
+                    معينة أو خلق تباين بصري أو تكملة التصميم
+                    الداخلي للعقار.
+
+                </p>
+
+
+                <p data-i18n="svc6P3">
+
+                    نشتغل مع العملاء لفهم المظهر اللي يفضلونه
+                    ونقدم حلول دهان وتشطيب ديكوري عملية لمساحتهم.
 
                 </p>
 
@@ -1968,7 +2233,7 @@ footer p {
 
                 <img
                     src="blog7.jpg"
-                    alt="Villa painting and finishing services in Riyadh"
+                    alt="خدمات دهان وتشطيب الفلل في الرياض"
                     loading="lazy">
 
             </div>
@@ -1981,36 +2246,33 @@ footer p {
                 </span>
 
 
-                <h2>
-                    Villa Painting Services in Riyadh
+                <h2 data-i18n="svc7Title">
+                    خدمات دهان الفلل في الرياض
                 </h2>
 
 
-                <p>
+                <p data-i18n="svc7P1">
 
-                    We provide <strong>villa painting services in
-                    Riyadh</strong> for both interior and exterior
-                    areas of residential properties.
-
-                </p>
-
-
-                <p>
-
-                    From refreshing the walls of an existing villa
-                    to preparing a newly renovated property, our
-                    painting services can help improve the overall
-                    appearance of your home.
+                    نوفر <strong>خدمات دهان الفلل في الرياض</strong>
+                    للمناطق الداخلية والخارجية للعقارات السكنية.
 
                 </p>
 
 
-                <p>
+                <p data-i18n="svc7P2">
 
-                    We can work on bedrooms, living rooms, majlis,
-                    corridors, entrances, exterior walls and other
-                    areas according to the requirements of the
-                    property.
+                    من تجديد جدران فيلا قائمة إلى تجهيز عقار
+                    مجدد حديثاً، خدمات الدهان لدينا تساعد على
+                    تحسين المظهر العام لمنزلك.
+
+                </p>
+
+
+                <p data-i18n="svc7P3">
+
+                    نقدر نشتغل على غرف النوم والصالات والمجالس
+                    والممرات والمداخل والجدران الخارجية وغيرها
+                    من المناطق حسب متطلبات العقار.
 
                 </p>
 
@@ -2030,7 +2292,7 @@ footer p {
 
                 <img
                     src="blog8.jpg"
-                    alt="Commercial painting service for offices and shops in Riyadh"
+                    alt="دهان تجاري للمكاتب والمحلات في الرياض"
                     loading="lazy">
 
             </div>
@@ -2043,35 +2305,33 @@ footer p {
                 </span>
 
 
-                <h2>
-                    Office & Commercial Painting
+                <h2 data-i18n="svc8Title">
+                    دهان المكاتب والمنشآت التجارية
                 </h2>
 
 
-                <p>
+                <p data-i18n="svc8P1">
 
-                    Our <strong>commercial painting services in Riyadh</strong>
-                    are suitable for offices, shops, restaurants,
-                    retail spaces and other commercial properties.
-
-                </p>
-
-
-                <p>
-
-                    A clean and professionally painted commercial
-                    space can create a better environment for
-                    employees, customers and visitors.
+                    خدمات <strong>الدهان التجاري في الرياض</strong>
+                    مناسبة للمكاتب والمحلات والمطاعم والمساحات
+                    التجارية وغيرها من العقارات التجارية.
 
                 </p>
 
 
-                <p>
+                <p data-i18n="svc8P2">
 
-                    We understand that commercial projects may
-                    require careful planning and efficient
-                    completion. Our focus is on organised work,
-                    clean finishing and professional results.
+                    المساحة التجارية النظيفة والمدهونة باحترافية
+                    تخلق بيئة أفضل للموظفين والعملاء والزوار.
+
+                </p>
+
+
+                <p data-i18n="svc8P3">
+
+                    نتفهم إن المشاريع التجارية تحتاج تخطيط دقيق
+                    وإنجاز فعال. تركيزنا على العمل المنظم والتشطيب
+                    النظيف والنتائج الاحترافية.
 
                 </p>
 
@@ -2091,7 +2351,7 @@ footer p {
 
                 <img
                     src="blog9.jpg"
-                    alt="Waterproof protective painting and coating in Riyadh"
+                    alt="دهان عازل للماء وطلاءات حماية في الرياض"
                     loading="lazy">
 
             </div>
@@ -2104,37 +2364,33 @@ footer p {
                 </span>
 
 
-                <h2>
-                    Waterproof Painting & Protective Coatings
+                <h2 data-i18n="svc9Title">
+                    دهانات عازلة للماء وطلاءات حماية
                 </h2>
 
 
-                <p>
+                <p data-i18n="svc9P1">
 
-                    Our <strong>waterproof painting and protective
-                    coating services in Riyadh</strong> are designed
-                    to provide additional protection for suitable
-                    surfaces against moisture and environmental
-                    exposure.
-
-                </p>
-
-
-                <p>
-
-                    Protective coatings can be useful for selected
-                    exterior areas and surfaces where moisture
-                    resistance and durability are important
-                    considerations.
+                    خدمات <strong>الدهان العازل للماء وطلاءات
+                    الحماية في الرياض</strong> مصممة لتوفير حماية
+                    إضافية للأسطح المناسبة ضد الرطوبة والتأثيرات
+                    البيئية.
 
                 </p>
 
 
-                <p>
+                <p data-i18n="svc9P2">
 
-                    We assess the surface and project requirements
-                    before recommending an appropriate coating
-                    solution.
+                    طلاءات الحماية مفيدة لبعض المناطق والأسطح
+                    الخارجية اللي تحتاج مقاومة رطوبة ومتانة عالية.
+
+                </p>
+
+
+                <p data-i18n="svc9P3">
+
+                    نقيّم السطح ومتطلبات المشروع قبل ما نرشح حل
+                    الطلاء المناسب.
 
                 </p>
 
@@ -2154,7 +2410,7 @@ footer p {
 
                 <img
                     src="blog10.jpg"
-                    alt="Complete painting and finishing solutions in Riyadh"
+                    alt="حلول دهان وتشطيب متكاملة في الرياض"
                     loading="lazy">
 
             </div>
@@ -2167,36 +2423,34 @@ footer p {
                 </span>
 
 
-                <h2>
-                    Complete Painting & Finishing Solutions
+                <h2 data-i18n="svc10Title">
+                    حلول دهان وتشطيب متكاملة
                 </h2>
 
 
-                <p>
+                <p data-i18n="svc10P1">
 
-                    Riyadh Epoxy and Painting provides integrated
-                    <strong>painting and finishing solutions in Riyadh</strong>
-                    for customers who need more than one service
-                    for their property.
-
-                </p>
-
-
-                <p>
-
-                    Projects may combine interior painting, exterior
-                    painting, epoxy flooring, decorative walls and
-                    other finishing requirements.
+                    تقدم الرياض ابوكسي والدهانات <strong>حلول دهان
+                    وتشطيب متكاملة في الرياض</strong> للعملاء اللي
+                    يحتاجون أكثر من خدمة واحدة لعقارهم.
 
                 </p>
 
 
-                <p>
+                <p data-i18n="svc10P2">
 
-                    Working with one service provider can make it
-                    easier to coordinate different finishing tasks
-                    and maintain a consistent appearance throughout
-                    a property.
+                    المشاريع ممكن تجمع بين الدهان الداخلي والخارجي
+                    وأرضيات الايبوكسي والجدران الديكورية ومتطلبات
+                    تشطيب أخرى.
+
+                </p>
+
+
+                <p data-i18n="svc10P3">
+
+                    التعامل مع مزود خدمة واحد يسهّل تنسيق مهام
+                    التشطيب المختلفة والحفاظ على مظهر متناسق في
+                    كل أنحاء العقار.
 
                 </p>
 
@@ -2220,22 +2474,21 @@ footer p {
 
     <div class="cta-content">
 
-        <div class="section-label">
-            Start Your Project
+        <div class="section-label" data-i18n="ctaLabel">
+            ابدأ مشروعك
         </div>
 
 
-        <h2>
-            Looking for Painting or Finishing Services in Riyadh?
+        <h2 data-i18n="ctaH2">
+            تبحث عن خدمات دهان أو تشطيب في الرياض؟
         </h2>
 
 
-        <p>
+        <p data-i18n="ctaP">
 
-            Contact Riyadh Epoxy and Painting to discuss your
-            project requirements. We provide painting, epoxy
-            flooring, wall decoration and finishing solutions
-            for residential and commercial properties.
+            تواصل مع الرياض ابوكسي والدهانات لمناقشة متطلبات
+            مشروعك. نوفر حلول الدهان وأرضيات الايبوكسي والديكور
+            الجداري والتشطيب للعقارات السكنية والتجارية.
 
         </p>
 
@@ -2244,9 +2497,10 @@ footer p {
 
             <a
                 href="index.html#quote"
-                class="btn btn-primary">
+                class="btn btn-primary"
+                data-i18n="btnQuote">
 
-                Request a Free Quote
+                اطلب عرض سعر مجاني
 
             </a>
 
@@ -2269,7 +2523,9 @@ footer p {
 
                 </svg>
 
-                WhatsApp Us
+                <span data-i18n="btnWhatsapp">
+                    تواصل عبر واتساب
+                </span>
 
             </a>
 
@@ -2294,51 +2550,53 @@ footer p {
 
     <h3>
 
-        Riyadh
-        <span>
-            Epoxy and Painting
+        <span data-i18n="footerBrand1">
+            الرياض
+        </span>
+
+        <span data-i18n="footerBrand2">
+            ابوكسي والدهانات
         </span>
 
     </h3>
 
 
-    <p>
+    <p data-i18n="footerTag">
 
-        Professional Epoxy Flooring, Painting,
-        Wall Decoration & Finishing Services
-        in Riyadh, Saudi Arabia
+        خدمات أرضيات ايبوكسي ودهانات وديكورات جدارية وتشطيبات
+        احترافية في الرياض، المملكة العربية السعودية
 
     </p>
 
 
     <div class="footer-links">
 
-        <a href="index.html">
-            Home
+        <a href="index.html" data-i18n="navHome">
+            الرئيسية
         </a>
 
-        <a href="index.html#services">
-            Services
+        <a href="index.html#services" data-i18n="navServices">
+            خدماتنا
         </a>
 
-        <a href="index.html#about">
-            About Us
+        <a href="index.html#about" data-i18n="navAbout">
+            من نحن
         </a>
 
-        <a href="index.html#projects">
-            Our Work
+        <a href="index.html#projects" data-i18n="navProjects">
+            أعمالنا
         </a>
 
-        <a href="blocks.html">
-            Blogs
+        <a href="blogs.html" data-i18n="navBlogs">
+            المدونة
         </a>
 
-        <a href="index.html#quote">
-            Free Quote
+        <a href="index.html#quote" data-i18n="navQuote">
+            عرض سعر مجاني
         </a>
 
-        <a href="index.html#contact">
-            Contact
+        <a href="index.html#contact" data-i18n="navContact">
+            تواصل معنا
         </a>
 
     </div>
@@ -2346,7 +2604,10 @@ footer p {
 
     <p>
 
-        WhatsApp:
+        <span data-i18n="footerWa">
+            واتساب:
+        </span>
+
         +966 50 889 5356
 
     </p>
@@ -2354,7 +2615,10 @@ footer p {
 
     <p>
 
-        Email:
+        <span data-i18n="footerEmailLbl">
+            البريد الإلكتروني:
+        </span>
+
         janiiazaz@gmail.com
 
     </p>
@@ -2365,9 +2629,17 @@ footer p {
         ©
         <span id="year"></span>
 
-        Riyadh Epoxy and Painting.
+        <span data-i18n="footerBrand1">
+            الرياض
+        </span>
 
-        All Rights Reserved.
+        <span data-i18n="footerBrand2">
+            ابوكسي والدهانات
+        </span>.
+
+        <span data-i18n="footerRights">
+            جميع الحقوق محفوظة.
+        </span>
 
     </p>
 
@@ -2381,8 +2653,8 @@ footer p {
 
 <button
     id="topBtn"
-    aria-label="Scroll back to top"
-    title="Back to top">
+    aria-label="العودة إلى الأعلى"
+    title="العودة إلى الأعلى">
 
     ↑
 
@@ -2391,6 +2663,440 @@ footer p {
 
 
 <script>
+
+/* =========================================================
+   LANGUAGE DATA
+========================================================= */
+
+const translations = {
+
+  ar: {
+
+    brandName:"الرياض ابوكسي",
+    brandSub:"دهانات وتشطيبات",
+
+    navHome:"الرئيسية",
+    navServices:"خدماتنا",
+    navAbout:"من نحن",
+    navProjects:"أعمالنا",
+    navBlogs:"المدونة",
+    navQuote:"عرض سعر مجاني",
+    navContact:"تواصل معنا",
+
+    heroBadge:"خدمات دهانات وتشطيبات في الرياض",
+
+    heroH1a:"خدماتنا و",
+    heroH1b:"معلومات مفيدة",
+
+    heroP:
+      "تعرف على خدماتنا الاحترافية في الدهان وأرضيات الايبوكسي والديكور الجداري والتشطيبات الداخلية للفلل والمنازل والمكاتب والعقارات التجارية في جميع أنحاء الرياض، المملكة العربية السعودية.",
+
+    breadcrumbCurrent:"خدماتنا ومعلوماتنا",
+
+    servicesLabel:"اللي نقدمه",
+
+    servicesH2:
+      "خدمات دهانات وتشطيبات احترافية في الرياض",
+
+    servicesP:
+      "تقدم الرياض ابوكسي والدهانات مجموعة من حلول الدهان والأرضيات والديكور والتشطيب المصممة للعقارات السكنية والتجارية في الرياض. تصفح خدماتنا أدناه لمعرفة المزيد عن الحلول اللي نوفرها.",
+
+    svc1Title:"أرضيات ايبوكسي في الرياض",
+
+    svc1P1:
+      "تقدم خدمات <strong>أرضيات الايبوكسي في الرياض</strong> حلول أرضيات متينة وناعمة وجذابة للكراجات والفلل والمكاتب وورش العمل والمحلات والمساحات التجارية الأخرى.",
+
+    svc1P2:
+      "تساعد طلاءات الايبوكسي على تكوين سطح نظيف واحترافي مع مقاومة جيدة للاستخدام اليومي والبقع والرطوبة. نركز على التحضير الصحيح للسطح والتطبيق الدقيق للوصول لتشطيب نظيف يدوم طويلاً.",
+
+    svc1P3:
+      "سواء كنت بحاجة لأرضية ايبوكسي لكراج منزلك أو لعقار تجاري، نقدر نناقش متطلباتك ونرشح لك الحل المناسب.",
+
+    svc2Title:"خدمات الدهان الداخلي",
+
+    svc2P1:
+      "نوفر <strong>خدمات الدهان الداخلي في الرياض</strong> للفلل والشقق وغرف النوم والصالات والمجالس والمكاتب والمساحات الداخلية الأخرى.",
+
+    svc2P2:
+      "الدهان الداخلي الاحترافي يجدد المكان ويحسّن مظهره ويعطي بيئة أنظف وأكثر ترحيباً. شغلنا يشمل التحضير والدهان والتشطيب مع الاهتمام بنظافة الحواف وتناسق المظهر.",
+
+    svc2P3:
+      "نقدر نساعد أصحاب العقارات في اختيار الألوان والتشطيبات المناسبة حسب طابع وطلب المنزل أو المنشأة.",
+
+    svc3Title:"الدهان الخارجي في الرياض",
+
+    svc3P1:
+      "خدمات <strong>الدهان الخارجي في الرياض</strong> مناسبة للفلل والمباني السكنية والعقارات التجارية والأسطح الخارجية.",
+
+    svc3P2:
+      "الأسطح الخارجية تتعرض للشمس والغبار والحرارة وتقلبات الطقس. التحضير الصحيح واختيار الطلاء المناسب يساعدان على تحسين مظهر وحماية الأسطح الخارجية.",
+
+    svc3P3:
+      "نوفر حلول دهان خارجي مع الاهتمام بتحضير السطح والتغطية وجودة التشطيب والمظهر العام للعقار.",
+
+    svc4Title:"الديكور الجداري والجدران المميزة",
+
+    svc4P1:
+      "تساعد خدمات <strong>الديكور الجداري في الرياض</strong> على تحويل الجدران البسيطة إلى مساحات جذابة ومميزة للفلل والمنازل والمكاتب والمساحات التجارية.",
+
+    svc4P2:
+      "المعالجات الجدارية الديكورية تضيف ملمس وطابع وجاذبية بصرية للمكان الداخلي. نشتغل بأفكار تصميم مختلفة لإنشاء تشطيبات تتناسب مع الطابع العام للعقار.",
+
+    svc4P3:
+      "إذا كنت تبحث عن ديكور جداري عصري لصالة أو مجلس أو مدخل أو جدار مميز، نقدر نناقش التصميم والتشطيب اللي تفضله.",
+
+    svc5Title:"خدمات التشطيب الداخلي",
+
+    svc5P1:
+      "خدمات <strong>التشطيب الداخلي في الرياض</strong> مصممة للعملاء اللي يبون مساحات داخلية نظيفة وأنيقة وجذابة بصرياً.",
+
+    svc5P2:
+      "نهتم بالمظهر النهائي للأسطح، يشمل الدهان والمعالجات الديكورية وتفاصيل التشطيب. التشطيب الصحيح يفرق كثير في مظهر العقار سواء كان مجدد حديثاً أو قائم من قبل.",
+
+    svc5P3:
+      "خدماتنا مناسبة للفلل والشقق والمكاتب والمحلات ومناطق الاستقبال والمساحات المعيشية وغيرها من المساحات الداخلية.",
+
+    svc6Title:"الدهان الديكوري",
+
+    svc6P1:
+      "<strong>الدهان الديكوري في الرياض</strong> يقدر يضيف طابع بصري مميز للمساحات الداخلية السكنية والتجارية.",
+
+    svc6P2:
+      "التشطيبات الديكورية تُستخدم لإبراز جدران معينة أو خلق تباين بصري أو تكملة التصميم الداخلي للعقار.",
+
+    svc6P3:
+      "نشتغل مع العملاء لفهم المظهر اللي يفضلونه ونقدم حلول دهان وتشطيب ديكوري عملية لمساحتهم.",
+
+    svc7Title:"خدمات دهان الفلل في الرياض",
+
+    svc7P1:
+      "نوفر <strong>خدمات دهان الفلل في الرياض</strong> للمناطق الداخلية والخارجية للعقارات السكنية.",
+
+    svc7P2:
+      "من تجديد جدران فيلا قائمة إلى تجهيز عقار مجدد حديثاً، خدمات الدهان لدينا تساعد على تحسين المظهر العام لمنزلك.",
+
+    svc7P3:
+      "نقدر نشتغل على غرف النوم والصالات والمجالس والممرات والمداخل والجدران الخارجية وغيرها من المناطق حسب متطلبات العقار.",
+
+    svc8Title:"دهان المكاتب والمنشآت التجارية",
+
+    svc8P1:
+      "خدمات <strong>الدهان التجاري في الرياض</strong> مناسبة للمكاتب والمحلات والمطاعم والمساحات التجارية وغيرها من العقارات التجارية.",
+
+    svc8P2:
+      "المساحة التجارية النظيفة والمدهونة باحترافية تخلق بيئة أفضل للموظفين والعملاء والزوار.",
+
+    svc8P3:
+      "نتفهم إن المشاريع التجارية تحتاج تخطيط دقيق وإنجاز فعال. تركيزنا على العمل المنظم والتشطيب النظيف والنتائج الاحترافية.",
+
+    svc9Title:"دهانات عازلة للماء وطلاءات حماية",
+
+    svc9P1:
+      "خدمات <strong>الدهان العازل للماء وطلاءات الحماية في الرياض</strong> مصممة لتوفير حماية إضافية للأسطح المناسبة ضد الرطوبة والتأثيرات البيئية.",
+
+    svc9P2:
+      "طلاءات الحماية مفيدة لبعض المناطق والأسطح الخارجية اللي تحتاج مقاومة رطوبة ومتانة عالية.",
+
+    svc9P3:
+      "نقيّم السطح ومتطلبات المشروع قبل ما نرشح حل الطلاء المناسب.",
+
+    svc10Title:"حلول دهان وتشطيب متكاملة",
+
+    svc10P1:
+      "تقدم الرياض ابوكسي والدهانات <strong>حلول دهان وتشطيب متكاملة في الرياض</strong> للعملاء اللي يحتاجون أكثر من خدمة واحدة لعقارهم.",
+
+    svc10P2:
+      "المشاريع ممكن تجمع بين الدهان الداخلي والخارجي وأرضيات الايبوكسي والجدران الديكورية ومتطلبات تشطيب أخرى.",
+
+    svc10P3:
+      "التعامل مع مزود خدمة واحد يسهّل تنسيق مهام التشطيب المختلفة والحفاظ على مظهر متناسق في كل أنحاء العقار.",
+
+    ctaLabel:"ابدأ مشروعك",
+
+    ctaH2:"تبحث عن خدمات دهان أو تشطيب في الرياض؟",
+
+    ctaP:
+      "تواصل مع الرياض ابوكسي والدهانات لمناقشة متطلبات مشروعك. نوفر حلول الدهان وأرضيات الايبوكسي والديكور الجداري والتشطيب للعقارات السكنية والتجارية.",
+
+    btnQuote:"اطلب عرض سعر مجاني",
+    btnWhatsapp:"تواصل عبر واتساب",
+
+    footerBrand1:"الرياض",
+    footerBrand2:"ابوكسي والدهانات",
+
+    footerTag:
+      "خدمات أرضيات ايبوكسي ودهانات وديكورات جدارية وتشطيبات احترافية في الرياض، المملكة العربية السعودية",
+
+    footerWa:"واتساب:",
+    footerEmailLbl:"البريد الإلكتروني:",
+    footerRights:"جميع الحقوق محفوظة."
+
+  },
+
+
+  en: {
+
+    brandName:"Riyadh Epoxy",
+    brandSub:"PAINTING & FINISHING",
+
+    navHome:"Home",
+    navServices:"Services",
+    navAbout:"About Us",
+    navProjects:"Our Work",
+    navBlogs:"Blogs",
+    navQuote:"Free Quote",
+    navContact:"Contact",
+
+    heroBadge:"RIYADH PAINTING & FINISHING SERVICES",
+
+    heroH1a:"Our Services &",
+    heroH1b:"Insights",
+
+    heroP:
+      "Discover our professional painting, epoxy flooring, wall decoration and interior finishing services for villas, homes, offices and commercial properties throughout Riyadh, Saudi Arabia.",
+
+    breadcrumbCurrent:"Our Services & Insights",
+
+    servicesLabel:"What We Offer",
+
+    servicesH2:
+      "Professional Painting & Finishing Services in Riyadh",
+
+    servicesP:
+      "Riyadh Epoxy and Painting provides a range of professional painting, flooring, decoration and finishing solutions designed for residential and commercial properties in Riyadh. Explore our services below to learn more about the solutions we provide.",
+
+    svc1Title:"Epoxy Flooring in Riyadh",
+
+    svc1P1:
+      "Our <strong>epoxy flooring services in Riyadh</strong> provide durable, smooth and attractive flooring solutions for garages, villas, offices, workshops, shops and other commercial spaces.",
+
+    svc1P2:
+      "Epoxy coatings can create a clean and professional surface while providing resistance to everyday wear, stains and moisture. We focus on proper surface preparation and careful application to achieve a neat and long-lasting finish.",
+
+    svc1P3:
+      "Whether you need epoxy flooring for a residential garage or a commercial property, we can discuss your requirements and recommend a suitable flooring solution.",
+
+    svc2Title:"Interior Painting Services",
+
+    svc2P1:
+      "We provide <strong>interior painting services in Riyadh</strong> for villas, apartments, bedrooms, living rooms, majlis, offices and other interior spaces.",
+
+    svc2P2:
+      "A professional interior paint job can refresh a space, improve its appearance and create a cleaner and more welcoming environment. Our work includes preparation, painting and finishing with attention to clean edges and an even appearance.",
+
+    svc2P3:
+      "We can help property owners choose suitable colours and finishes according to the style and requirements of their home or business.",
+
+    svc3Title:"Exterior Painting in Riyadh",
+
+    svc3P1:
+      "Our <strong>exterior painting services in Riyadh</strong> are suitable for villas, residential buildings, commercial properties and outdoor surfaces.",
+
+    svc3P2:
+      "Exterior surfaces are exposed to sunlight, dust, heat and changing weather conditions. Proper preparation and the right coating can help improve the appearance and protection of exterior surfaces.",
+
+    svc3P3:
+      "We provide exterior painting solutions with attention to surface preparation, coverage, finishing quality and the overall appearance of the property.",
+
+    svc4Title:"Wall Decoration & Feature Walls",
+
+    svc4P1:
+      "Our <strong>wall decoration services in Riyadh</strong> help transform plain walls into attractive feature areas for villas, homes, offices and commercial interiors.",
+
+    svc4P2:
+      "Decorative wall treatments can add texture, character and visual interest to an interior. We work with different design ideas to create finishes that complement the overall style of the property.",
+
+    svc4P3:
+      "If you are looking for modern wall decoration for a living room, majlis, entrance or feature wall, we can discuss your preferred design and finishing requirements.",
+
+    svc5Title:"Interior Finishing Services",
+
+    svc5P1:
+      "Our <strong>interior finishing services in Riyadh</strong> are designed for customers who want clean, polished and visually attractive interior spaces.",
+
+    svc5P2:
+      "We pay attention to the final appearance of surfaces, including painting, decorative treatments and finishing details. Proper finishing can make a significant difference to the appearance of a newly renovated or existing property.",
+
+    svc5P3:
+      "Our services are suitable for villas, apartments, offices, shops, reception areas, living spaces and other interiors.",
+
+    svc6Title:"Decorative Painting",
+
+    svc6P1:
+      "<strong>Decorative painting in Riyadh</strong> can add a distinctive visual character to residential and commercial interiors.",
+
+    svc6P2:
+      "Decorative finishes can be used to highlight selected walls, create visual contrast or complement the interior design of a property.",
+
+    svc6P3:
+      "We work with customers to understand their preferred appearance and provide practical decorative painting and finishing solutions for their space.",
+
+    svc7Title:"Villa Painting Services in Riyadh",
+
+    svc7P1:
+      "We provide <strong>villa painting services in Riyadh</strong> for both interior and exterior areas of residential properties.",
+
+    svc7P2:
+      "From refreshing the walls of an existing villa to preparing a newly renovated property, our painting services can help improve the overall appearance of your home.",
+
+    svc7P3:
+      "We can work on bedrooms, living rooms, majlis, corridors, entrances, exterior walls and other areas according to the requirements of the property.",
+
+    svc8Title:"Office & Commercial Painting",
+
+    svc8P1:
+      "Our <strong>commercial painting services in Riyadh</strong> are suitable for offices, shops, restaurants, retail spaces and other commercial properties.",
+
+    svc8P2:
+      "A clean and professionally painted commercial space can create a better environment for employees, customers and visitors.",
+
+    svc8P3:
+      "We understand that commercial projects may require careful planning and efficient completion. Our focus is on organised work, clean finishing and professional results.",
+
+    svc9Title:"Waterproof Painting & Protective Coatings",
+
+    svc9P1:
+      "Our <strong>waterproof painting and protective coating services in Riyadh</strong> are designed to provide additional protection for suitable surfaces against moisture and environmental exposure.",
+
+    svc9P2:
+      "Protective coatings can be useful for selected exterior areas and surfaces where moisture resistance and durability are important considerations.",
+
+    svc9P3:
+      "We assess the surface and project requirements before recommending an appropriate coating solution.",
+
+    svc10Title:"Complete Painting & Finishing Solutions",
+
+    svc10P1:
+      "Riyadh Epoxy and Painting provides integrated <strong>painting and finishing solutions in Riyadh</strong> for customers who need more than one service for their property.",
+
+    svc10P2:
+      "Projects may combine interior painting, exterior painting, epoxy flooring, decorative walls and other finishing requirements.",
+
+    svc10P3:
+      "Working with one service provider can make it easier to coordinate different finishing tasks and maintain a consistent appearance throughout a property.",
+
+    ctaLabel:"Start Your Project",
+
+    ctaH2:"Looking for Painting or Finishing Services in Riyadh?",
+
+    ctaP:
+      "Contact Riyadh Epoxy and Painting to discuss your project requirements. We provide painting, epoxy flooring, wall decoration and finishing solutions for residential and commercial properties.",
+
+    btnQuote:"Request a Free Quote",
+    btnWhatsapp:"WhatsApp Us",
+
+    footerBrand1:"Riyadh",
+    footerBrand2:"Epoxy and Painting",
+
+    footerTag:
+      "Professional Epoxy Flooring, Painting, Wall Decoration & Finishing Services in Riyadh, Saudi Arabia",
+
+    footerWa:"WhatsApp:",
+    footerEmailLbl:"Email:",
+    footerRights:"All Rights Reserved."
+
+  }
+
+};
+
+
+/* =========================================================
+   CURRENT LANGUAGE
+   ARABIC IS DEFAULT
+========================================================= */
+
+let currentLang = "ar";
+
+
+/* =========================================================
+   APPLY LANGUAGE
+========================================================= */
+
+function applyLang(lang){
+
+  currentLang = lang;
+
+
+  document.documentElement.lang =
+    lang === "ar" ? "ar" : "en";
+
+  document.documentElement.dir =
+    lang === "ar" ? "rtl" : "ltr";
+
+  document.body.dir =
+    lang === "ar" ? "rtl" : "ltr";
+
+
+  document.getElementById("langLabel").textContent =
+    lang === "ar" ? "English" : "العربية";
+
+
+  document
+    .querySelectorAll("[data-i18n]")
+    .forEach(function(el){
+
+      const key = el.getAttribute("data-i18n");
+
+      const value = translations[lang][key];
+
+
+      if(value !== undefined){
+
+        if(value.includes("<strong>")){
+
+          el.innerHTML = value;
+
+        }else{
+
+          el.textContent = value;
+
+        }
+
+      }
+
+    });
+
+
+  document.title =
+    lang === "ar"
+
+      ? "خدمات الدهان والتشطيب في الرياض | الرياض ابوكسي والدهانات"
+
+      : "Painting & Finishing Services in Riyadh | Riyadh Epoxy and Painting";
+
+
+  updateAccessibility(lang);
+
+}
+
+
+/* =========================================================
+   ACCESSIBILITY TEXT
+========================================================= */
+
+function updateAccessibility(lang){
+
+  const menuBtn = document.getElementById("menuBtn");
+  const langToggle = document.getElementById("langToggle");
+  const topBtn = document.getElementById("topBtn");
+
+
+  if(lang === "ar"){
+
+    menuBtn.setAttribute("aria-label", "فتح قائمة التنقل");
+    langToggle.setAttribute("aria-label", "تغيير اللغة");
+    topBtn.setAttribute("aria-label", "العودة إلى الأعلى");
+
+  }else{
+
+    menuBtn.setAttribute("aria-label", "Open navigation menu");
+    langToggle.setAttribute("aria-label", "Switch language");
+    topBtn.setAttribute("aria-label", "Scroll back to top");
+
+  }
+
+}
+
 
 /* =========================================================
    MOBILE MENU
@@ -2421,10 +3127,6 @@ menuBtn.addEventListener(
     }
 );
 
-
-/* =========================================================
-   CLOSE MOBILE MENU
-========================================================= */
 
 document
     .querySelectorAll("#mainNav a")
@@ -2464,13 +3166,11 @@ window.addEventListener(
 
         if (window.scrollY > 500) {
 
-            topBtn.style.display =
-                "block";
+            topBtn.style.display = "block";
 
         } else {
 
-            topBtn.style.display =
-                "none";
+            topBtn.style.display = "none";
 
         }
 
@@ -2502,6 +3202,32 @@ document
     .getElementById("year")
     .textContent =
     new Date().getFullYear();
+
+
+/* =========================================================
+   LANGUAGE TOGGLE
+========================================================= */
+
+document
+  .getElementById("langToggle")
+  .addEventListener(
+    "click",
+    function(){
+
+      applyLang(
+        currentLang === "ar" ? "en" : "ar"
+      );
+
+    }
+  );
+
+
+/* =========================================================
+   IMPORTANT:
+   APPLY ARABIC IMMEDIATELY ON PAGE LOAD
+========================================================= */
+
+applyLang("ar");
 
 </script>
 
