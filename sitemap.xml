@@ -3,11 +3,15 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
     <url>
-        <loc>https://riyadhepoxypainting.com/</loc>
+        <loc>https://www.riyadhepoxypainting.com/</loc>
+        <changefreq>monthly</changefreq>
+        <priority>1.0</priority>
     </url>
 
     <url>
-        <loc>https://riyadhepoxypainting.com/blogs.html</loc>
+        <loc>https://www.riyadhepoxypainting.com/blogs.html</loc>
+        <changefreq>weekly</changefreq>
+        <priority>0.8</priority>
     </url>
 
 </urlset>
