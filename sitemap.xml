@@ -1,17 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
-
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 
+    <!-- Home -->
     <url>
         <loc>https://www.riyadhepoxypainting.com/</loc>
-        <changefreq>monthly</changefreq>
-        <priority>1.0</priority>
     </url>
 
+    <!-- Services -->
     <url>
-        <loc>https://www.riyadhepoxypainting.com/blogs.html</loc>
-        <changefreq>weekly</changefreq>
-        <priority>0.8</priority>
+        <loc>https://www.riyadhepoxypainting.com/services</loc>
+    </url>
+
+    <!-- About -->
+    <url>
+        <loc>https://www.riyadhepoxypainting.com/about</loc>
+    </url>
+
+    <!-- Projects / Our Work -->
+    <url>
+        <loc>https://www.riyadhepoxypainting.com/projects</loc>
+    </url>
+
+    <!-- Free Quote -->
+    <url>
+        <loc>https://www.riyadhepoxypainting.com/quote</loc>
+    </url>
+
+    <!-- Contact -->
+    <url>
+        <loc>https://www.riyadhepoxypainting.com/contact</loc>
+    </url>
+
+    <!-- Blog -->
+    <url>
+        <loc>https://www.riyadhepoxypainting.com/blogs.</loc>
     </url>
 
 </urlset>
