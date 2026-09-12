@@ -2,7 +2,6 @@
 <html lang="ar" dir="rtl">
 <head>
 
-
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 
@@ -23,20 +22,20 @@
 
 <link
   rel="alternate"
-  hreflang="ar-sa"
-  href="https://www.riyadhepoxypainting.com/"
+  hreflang="ar-SA"
+  href="https://www.riyadhepoxypainting.com/contact"
 >
 
 <link
   rel="alternate"
   hreflang="en"
-  href="https://www.riyadhepoxypainting.com/"
+  href="https://www.riyadhepoxypainting.com/contact"
 >
 
 <link
   rel="alternate"
   hreflang="x-default"
-  href="https://www.riyadhepoxypainting.com/"
+  href="https://www.riyadhepoxypainting.com/contact"
 >
 
 <link
@@ -47,21 +46,24 @@
 
 <meta
   property="og:title"
-  content="الرياض ابوكسي والدهانات | خدمات الدهان والتشطيب"
+  content="تواصل معنا | الرياض ابوكسي والدهانات"
 >
 
 <meta
   property="og:description"
-  content="خدمات احترافية في أرضيات الايبوكسي والدهانات والديكورات الجدارية والتشطيبات الداخلية في الرياض."
+  content="تواصل مع الرياض ابوكسي والدهانات للحصول على استشارة أو عرض سعر لخدمات الدهان والايبوكسي والتشطيبات في الرياض."
 >
 
 <meta property="og:type" content="website">
 
-<meta property="og:url" content="https://www.riyadhepoxypainting.com/contact">
+<meta
+  property="og:url"
+  content="https://www.riyadhepoxypainting.com/contact"
+>
 
 <meta
   property="og:image"
-  content="logo.png"
+  content="https://www.riyadhepoxypainting.com/logo.png"
 >
 
 <meta property="og:locale" content="ar_SA">
@@ -71,21 +73,23 @@
 
 <meta
   name="twitter:title"
-  content="الرياض ابوكسي والدهانات"
+  content="تواصل معنا | الرياض ابوكسي والدهانات"
 >
 
 <meta
   name="twitter:description"
-  content="خدمات أرضيات الايبوكسي والدهانات والديكورات والتشطيبات في الرياض."
+  content="تواصل مع الرياض ابوكسي والدهانات لخدمات أرضيات الايبوكسي والدهانات والديكورات والتشطيبات في الرياض."
 >
 
 <meta
   name="twitter:image"
-  content="logo.png"
+  content="https://www.riyadhepoxypainting.com/logo.png"
 >
 
 
-<!-- FONTS -->
+<!-- =========================================================
+     FONTS
+========================================================= -->
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 
@@ -101,7 +105,9 @@
 >
 
 
-<!-- LOCAL BUSINESS SCHEMA -->
+<!-- =========================================================
+     LOCAL BUSINESS SCHEMA
+========================================================= -->
 
 <script type="application/ld+json">
 {
@@ -137,7 +143,9 @@
 </script>
 
 
-<!-- FAQ SCHEMA -->
+<!-- =========================================================
+     FAQ SCHEMA
+========================================================= -->
 
 <script type="application/ld+json">
 {
@@ -240,7 +248,6 @@ body{
   color:var(--text);
   line-height:1.8;
   font-size:16px;
-  transition:background .3s;
 }
 
 
@@ -292,10 +299,7 @@ textarea{
 
 
 a:focus-visible,
-button:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible{
+button:focus-visible{
   outline:3px solid var(--gold-light);
   outline-offset:3px;
 }
@@ -315,9 +319,14 @@ textarea:focus-visible{
 }
 
 
+/* =========================================================
+   DECORATIVE PATTERN
+========================================================= */
+
 .ksa-pattern{
 
   position:absolute;
+
   inset:0;
 
   pointer-events:none;
@@ -351,7 +360,9 @@ textarea:focus-visible{
 }
 
 
-/* ================= HEADER ================= */
+/* =========================================================
+   HEADER
+========================================================= */
 
 header{
 
@@ -587,27 +598,9 @@ nav a:hover::after{
 }
 
 
-.icon{
-
-  width:21px;
-
-  height:21px;
-
-  display:block;
-
-  fill:none;
-
-  stroke:currentColor;
-
-  stroke-width:2;
-
-  stroke-linecap:round;
-
-  stroke-linejoin:round;
-}
-
-
-/* ================= FLOATING CONTACT ================= */
+/* =========================================================
+   FLOATING CONTACT
+========================================================= */
 
 .floating-contact{
 
@@ -615,7 +608,7 @@ nav a:hover::after{
 
   left:16px;
 
-  bottom:92px;
+  bottom:24px;
 
   display:flex;
 
@@ -681,1159 +674,45 @@ body[dir="ltr"] .floating-contact{
 }
 
 
-#topBtn{
+.icon{
 
-  position:fixed;
+  width:21px;
 
-  left:16px;
-
-  bottom:24px;
-
-  width:45px;
-
-  height:45px;
-
-  display:none;
-
-  border:none;
-
-  border-radius:50%;
-
-  background:var(--gold);
-
-  color:var(--navy);
-
-  font-size:20px;
-
-  font-weight:900;
-
-  cursor:pointer;
-
-  z-index:899;
-
-  box-shadow:
-    0 8px 20px rgba(0,0,0,.18);
-}
-
-
-body[dir="ltr"] #topBtn{
-
-  left:auto;
-
-  right:16px;
-}
-
-
-/* ================= HERO ================= */
-
-.hero{
-
-  position:relative;
-
-  min-height:88vh;
-
-  overflow:hidden;
-
-  background:
-    linear-gradient(
-      135deg,
-      rgba(8,28,43,.90),
-      rgba(16,43,63,.82)
-    ),
-    url("ext.jpg");
-
-  background-size:cover;
-
-  background-position:center;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  text-align:center;
-
-  color:#fff;
-
-  padding:80px 20px;
-}
-
-
-.hero-content{
-
-  position:relative;
-
-  z-index:2;
-
-  max-width:940px;
-
-  width:100%;
-}
-
-
-.hero-badge{
-
-  display:inline-block;
-
-  padding:8px 18px;
-
-  border:
-    1px solid rgba(231,195,106,.7);
-
-  border-radius:50px;
-
-  color:var(--gold-light);
-
-  font-size:11px;
-
-  font-weight:800;
-
-  letter-spacing:0;
-
-  margin-bottom:20px;
-
-  background:
-    rgba(255,255,255,.06);
-}
-
-
-body[dir="ltr"] .hero-badge{
-  letter-spacing:1.4px;
-}
-
-
-.hero h1{
-
-  font-size:
-    clamp(32px,6vw,64px);
-
-  line-height:1.2;
-
-  margin-bottom:22px;
-
-  word-wrap:break-word;
-}
-
-
-.hero h1 span{
-  color:var(--gold-light);
-}
-
-
-.hero p{
-
-  max-width:760px;
-
-  margin:0 auto 30px;
-
-  font-size:18px;
-
-  color:#eef2f4;
-}
-
-
-.hero-buttons{
-
-  display:flex;
-
-  justify-content:center;
-
-  flex-wrap:wrap;
-}
-
-
-/* ================= BUTTONS ================= */
-
-.btn{
-
-  display:inline-flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  gap:9px;
-
-  padding:14px 25px;
-
-  border:none;
-
-  border-radius:9px;
-
-  margin:5px;
-
-  font-weight:800;
-
-  font-size:14px;
-
-  transition:.3s;
-
-  min-height:44px;
-
-  cursor:pointer;
-}
-
-
-.btn:hover{
-  transform:translateY(-3px);
-}
-
-
-.btn-primary{
-
-  background:var(--gold);
-
-  color:var(--navy);
-
-  box-shadow:
-    0 8px 22px rgba(201,154,62,.25);
-}
-
-
-.btn-primary:hover{
-  background:var(--gold-light);
-}
-
-
-.btn-whatsapp{
-
-  background:var(--green);
-
-  color:#fff;
-}
-
-
-.btn-whatsapp:hover{
-  background:var(--green-dark);
-}
-
-
-/* ================= SECTIONS ================= */
-
-section{
-
-  padding:90px 6%;
-
-  overflow:hidden;
-}
-
-
-.section-title{
-
-  text-align:center;
-
-  max-width:850px;
-
-  margin:0 auto 50px;
-}
-
-
-.section-label{
-
-  color:var(--gold);
-
-  font-size:11px;
-
-  font-weight:800;
-
-  letter-spacing:0;
-
-  text-transform:uppercase;
-
-  margin-bottom:7px;
-}
-
-
-body[dir="ltr"] .section-label{
-  letter-spacing:1.7px;
-}
-
-
-.section-title h2{
-
-  color:var(--navy);
-
-  font-size:
-    clamp(26px,4vw,42px);
-
-  line-height:1.3;
-
-  margin-bottom:12px;
-
-  word-wrap:break-word;
-}
-
-
-.section-title p{
-
-  color:var(--muted);
-
-  font-size:16px;
-}
-
-
-/* ================= SERVICES ================= */
-
-.services{
-
-  background:var(--sand-light);
-
-  position:relative;
-
-  overflow:hidden;
-}
-
-
-.service-grid{
-
-  display:grid;
-
-  grid-template-columns:
-    repeat(3,minmax(0,1fr));
-
-  gap:25px;
-
-  max-width:1400px;
-
-  margin:auto;
-
-  position:relative;
-
-  z-index:2;
-}
-
-
-.service-card{
-
-  background:#fff;
-
-  border:
-    1px solid var(--border);
-
-  border-radius:var(--radius);
-
-  overflow:hidden;
-
-  box-shadow:
-    0 5px 18px rgba(16,43,63,.06);
-
-  transition:
-    transform .35s,
-    box-shadow .35s;
-}
-
-
-.service-card:hover{
-
-  transform:translateY(-8px);
-
-  box-shadow:var(--shadow-hover);
-}
-
-
-.service-image{
-
-  height:230px;
-
-  overflow:hidden;
-
-  background:var(--sand);
-}
-
-
-.service-image img{
-
-  height:100%;
-
-  object-fit:cover;
-
-  transition:transform .5s;
-}
-
-
-.service-card:hover
-.service-image img{
-  transform:scale(1.06);
-}
-
-
-.service-content{
-  padding:22px;
-}
-
-
-.service-number{
-
-  display:inline-flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  width:31px;
-
-  height:31px;
-
-  border-radius:50%;
-
-  background:
-    rgba(201,154,62,.13);
-
-  color:var(--gold);
-
-  font-size:11px;
-
-  font-weight:800;
-
-  margin-bottom:10px;
-}
-
-
-.service-content h3{
-
-  color:var(--navy);
-
-  font-size:20px;
-
-  line-height:1.3;
-
-  margin-bottom:10px;
-}
-
-
-.service-content p{
-
-  color:var(--muted);
-
-  font-size:14px;
-
-  line-height:1.8;
-}
-
-
-/* ================= ABOUT ================= */
-
-.about{
-
-  background:#fff;
-
-  position:relative;
-}
-
-
-.about-content{
-
-  max-width:1050px;
-
-  margin:auto;
-
-  text-align:right;
-}
-
-
-body[dir="ltr"]
-.about-content{
-  text-align:left;
-}
-
-
-.about-content
-.section-label{
-  text-align:center;
-}
-
-
-.about-content h2{
-
-  color:var(--navy);
-
-  font-size:
-    clamp(28px,4vw,46px);
-
-  line-height:1.3;
-
-  margin-bottom:22px;
-
-  text-align:center;
-
-  word-wrap:break-word;
-}
-
-
-.about-content p{
-
-  color:var(--muted);
-
-  margin-bottom:17px;
-
-  font-size:16px;
-
-  line-height:1.9;
-}
-
-
-.about-content strong{
-  color:var(--navy);
-}
-
-
-.about-list{
-
-  margin:28px 0;
-
-  display:grid;
-
-  grid-template-columns:
-    repeat(3,1fr);
-
-  gap:13px;
-}
-
-
-.about-list div{
-
-  background:var(--sand-light);
-
-  border:
-    1px solid var(--border);
-
-  padding:14px;
-
-  border-radius:9px;
-
-  font-size:13px;
-
-  font-weight:700;
-
-  color:var(--navy);
-}
-
-
-.about-list span:first-child{
-
-  color:var(--gold);
-
-  margin-left:6px;
-}
-
-
-body[dir="ltr"]
-.about-list span:first-child{
-
-  margin-left:0;
-
-  margin-right:6px;
-}
-
-
-.experience{
-
-  display:grid;
-
-  grid-template-columns:
-    repeat(3,1fr);
-
-  gap:15px;
-
-  margin-top:25px;
-}
-
-
-.experience-box{
-
-  padding:20px 10px;
-
-  border-radius:10px;
-
-  background:var(--navy);
-
-  color:#fff;
-
-  text-align:center;
-}
-
-
-.experience-box strong{
+  height:21px;
 
   display:block;
 
-  color:var(--gold-light);
+  fill:none;
 
-  font-size:20px;
+  stroke:currentColor;
+
+  stroke-width:2;
+
+  stroke-linecap:round;
+
+  stroke-linejoin:round;
 }
 
 
-.experience-box small{
-
-  color:#c2ced7;
-
-  font-size:11px;
-}
-
-
-/* ================= PROJECTS ================= */
-
-.projects{
-
-  background:var(--sand-light);
-
-  position:relative;
-
-  overflow:hidden;
-}
-
-
-.project-grid{
-
-  max-width:1400px;
-
-  margin:auto;
-
-  display:grid;
-
-  grid-template-columns:
-    repeat(3,1fr);
-
-  gap:22px;
-
-  position:relative;
-
-  z-index:2;
-}
-
-
-.project{
-
-  height:340px;
-
-  position:relative;
-
-  overflow:hidden;
-
-  border-radius:var(--radius);
-
-  background:var(--navy);
-
-  border:
-    3px solid rgba(201,154,62,.25);
-}
-
-
-.project img{
-
-  width:100%;
-
-  height:100%;
-
-  object-fit:cover;
-
-  transition:.6s;
-}
-
-
-.project:hover img{
-  transform:scale(1.08);
-}
-
-
-.project::after{
-
-  content:"";
-
-  position:absolute;
-
-  inset:0;
-
-  background:
-    linear-gradient(
-      transparent 30%,
-      rgba(8,28,43,.92)
-    );
-}
-
-
-.project-overlay{
-
-  position:absolute;
-
-  left:0;
-
-  right:0;
-
-  bottom:0;
-
-  z-index:2;
-
-  padding:24px;
-
-  color:#fff;
-}
-
-
-.project-overlay span{
-
-  display:block;
-
-  color:var(--gold-light);
-
-  font-size:10px;
-
-  font-weight:800;
-
-  text-transform:uppercase;
-
-  letter-spacing:0;
-}
-
-
-body[dir="ltr"]
-.project-overlay span{
-  letter-spacing:1.2px;
-}
-
-
-.project-overlay h3{
-
-  font-size:20px;
-
-  line-height:1.3;
-}
-
-
-/* ================= WHY ================= */
-
-.why{
-
-  position:relative;
-
-  overflow:hidden;
-
-  background:
-    linear-gradient(
-      135deg,
-      var(--navy-dark),
-      var(--navy-light)
-    );
-
-  color:#fff;
-}
-
-
-.why .section-title h2{
-  color:#fff;
-}
-
-
-.why .section-title p{
-  color:#bdc9d2;
-}
-
-
-.why-grid{
-
-  max-width:1200px;
-
-  margin:auto;
-
-  display:grid;
-
-  grid-template-columns:
-    repeat(4,1fr);
-
-  gap:18px;
-
-  position:relative;
-
-  z-index:2;
-}
-
-
-.why-card{
-
-  text-align:center;
-
-  padding:30px 18px;
-
-  background:
-    rgba(255,255,255,.05);
-
-  border:
-    1px solid rgba(255,255,255,.09);
-
-  border-radius:14px;
-
-  transition:.3s;
-}
-
-
-.why-card:hover{
-
-  transform:translateY(-5px);
-
-  background:
-    rgba(255,255,255,.09);
-}
-
-
-.why-icon{
-
-  width:56px;
-
-  height:56px;
-
-  margin:0 auto 14px;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  border-radius:50%;
-
-  border:
-    1px solid rgba(231,195,106,.35);
-
-  color:var(--gold-light);
-}
-
-
-.why-icon svg{
-
-  width:25px;
-
-  height:25px;
-}
-
-
-.why-card h3{
-
-  color:var(--gold-light);
-
-  margin-bottom:7px;
-}
-
-
-.why-card p{
-
-  color:#bcc8d0;
-
-  font-size:13px;
-}
-
-
-/* ================= FAQ ================= */
-
-.faq{
-  background:#fff;
-}
-
-
-.faq-inner{
-
-  max-width:900px;
-
-  margin:auto;
-}
-
-
-.faq-item{
-
-  border:
-    1px solid var(--border);
-
-  border-radius:12px;
-
-  margin-bottom:12px;
-
-  overflow:hidden;
-
-  background:var(--sand-light);
-}
-
-
-.faq-q{
-
-  width:100%;
-
-  text-align:right;
-
-  background:transparent;
-
-  border:none;
-
-  padding:18px 20px;
-
-  display:flex;
-
-  justify-content:space-between;
-
-  align-items:center;
-
-  gap:12px;
-
-  cursor:pointer;
-
-  color:var(--navy);
-
-  font-weight:700;
-
-  font-size:15.5px;
-}
-
-
-body[dir="ltr"] .faq-q{
-  text-align:left;
-}
-
-
-.faq-q .plus{
-
-  flex-shrink:0;
-
-  width:22px;
-
-  height:22px;
-
-  color:var(--gold);
-
-  transition:.3s;
-}
-
-
-.faq-item.open
-.faq-q .plus{
-  transform:rotate(45deg);
-}
-
-
-.faq-a{
-
-  max-height:0;
-
-  overflow:hidden;
-
-  transition:
-    max-height .3s ease;
-
-  color:var(--muted);
-
-  font-size:14.5px;
-}
-
-
-.faq-a p{
-  padding:0 20px 18px;
-}
-
-
-.faq-item.open .faq-a{
-  max-height:220px;
-}
-
-
-/* ================= SEO ================= */
-
-.seo-content{
-
-  background:var(--sand-light);
-}
-
-
-.seo-content-inner{
-
-  max-width:1150px;
-
-  margin:auto;
-}
-
-
-.seo-content h2{
-
-  color:var(--navy);
-
-  font-size:
-    clamp(24px,4vw,30px);
-
-  margin-bottom:15px;
-
-  word-wrap:break-word;
-}
-
-
-.seo-content h3{
-
-  color:var(--navy);
-
-  font-size:21px;
-
-  margin-top:28px;
-
-  margin-bottom:8px;
-}
-
-
-.seo-content p{
-
-  color:var(--muted);
-
-  font-size:15px;
-
-  line-height:1.9;
-
-  margin-bottom:15px;
-}
-
-
-/* ================= QUOTE ================= */
-
-.quote{
-  background:var(--cream);
-}
-
-
-.quote-box{
-
-  max-width:900px;
-
-  margin:auto;
-
-  background:#fff;
-
-  padding:40px;
-
-  border-radius:var(--radius);
-
-  border:
-    1px solid var(--border);
-
-  box-shadow:var(--shadow);
-}
-
-
-.form-row{
-
-  display:grid;
-
-  grid-template-columns:
-    1fr 1fr;
-
-  gap:18px;
-}
-
-
-.form-group{
-  margin-bottom:18px;
-}
-
-
-.form-group label{
-
-  display:block;
-
-  color:var(--navy);
-
-  font-weight:800;
-
-  font-size:13px;
-
-  margin-bottom:6px;
-}
-
-
-.form-group input,
-.form-group select,
-.form-group textarea{
-
-  width:100%;
-
-  padding:13px 14px;
-
-  border:
-    1px solid #d5d0c5;
-
-  border-radius:9px;
-
-  background:#fff;
-
-  color:var(--text);
-
-  outline:none;
-
-  font-size:16px;
-}
-
-
-.form-group input:focus,
-.form-group select:focus,
-.form-group textarea:focus{
-
-  border-color:var(--gold);
-
-  box-shadow:
-    0 0 0 4px rgba(201,154,62,.12);
-}
-
-
-.form-group textarea{
-
-  min-height:140px;
-
-  resize:vertical;
-}
-
-
-.submit-btn{
-
-  width:100%;
-
-  padding:15px;
-
-  border:none;
-
-  border-radius:9px;
-
-  background:var(--green);
-
-  color:#fff;
-
-  font-weight:800;
-
-  font-size:15px;
-
-  cursor:pointer;
-
-  display:flex;
-
-  align-items:center;
-
-  justify-content:center;
-
-  gap:9px;
-
-  transition:.3s;
-
-  min-height:48px;
-}
-
-
-.submit-btn:hover{
-
-  background:var(--green-dark);
-
-  transform:translateY(-2px);
-}
-
-
-/* ================= CONTACT ================= */
+/* =========================================================
+   CONTACT SECTION
+========================================================= */
 
 .contact{
+
   background:var(--cream);
+
+  min-height:calc(100vh - 90px);
+
+  display:flex;
+
+  align-items:center;
 }
 
 
 .contact-grid{
+
+  width:100%;
 
   max-width:1250px;
 
@@ -1880,6 +759,29 @@ body[dir="ltr"] .faq-q{
   color:var(--muted);
 
   margin-bottom:25px;
+
+  font-size:16px;
+}
+
+
+.section-label{
+
+  color:var(--gold);
+
+  font-size:11px;
+
+  font-weight:800;
+
+  letter-spacing:0;
+
+  text-transform:uppercase;
+
+  margin-bottom:7px;
+}
+
+
+body[dir="ltr"] .section-label{
+  letter-spacing:1.7px;
 }
 
 
@@ -1939,6 +841,8 @@ body[dir="ltr"] .faq-q{
   font-size:14px;
 
   word-break:break-word;
+
+  transition:.25s;
 }
 
 
@@ -1947,9 +851,70 @@ body[dir="ltr"] .faq-q{
 }
 
 
+/* =========================================================
+   BUTTONS
+========================================================= */
+
+.btn{
+
+  display:inline-flex;
+
+  align-items:center;
+
+  justify-content:center;
+
+  gap:9px;
+
+  padding:14px 25px;
+
+  border:none;
+
+  border-radius:9px;
+
+  margin:5px 0;
+
+  font-weight:800;
+
+  font-size:14px;
+
+  transition:.3s;
+
+  min-height:48px;
+
+  cursor:pointer;
+
+  text-align:center;
+}
+
+
+.btn:hover{
+  transform:translateY(-3px);
+}
+
+
+.btn-primary{
+
+  background:var(--gold);
+
+  color:var(--navy);
+
+  box-shadow:
+    0 8px 22px rgba(201,154,62,.25);
+}
+
+
+.btn-primary:hover{
+  background:var(--gold-light);
+}
+
+
+/* =========================================================
+   MAP
+========================================================= */
+
 .map{
 
-  min-height:400px;
+  min-height:440px;
 
   overflow:hidden;
 
@@ -1958,6 +923,8 @@ body[dir="ltr"] .faq-q{
   box-shadow:var(--shadow);
 
   border:4px solid #fff;
+
+  background:#ddd;
 }
 
 
@@ -1967,13 +934,15 @@ body[dir="ltr"] .faq-q{
 
   height:100%;
 
-  min-height:400px;
+  min-height:440px;
 
   border:0;
 }
 
 
-/* ================= FOOTER ================= */
+/* =========================================================
+   FOOTER
+========================================================= */
 
 footer{
 
@@ -2030,6 +999,8 @@ footer p{
   color:#c8d2d9;
 
   font-size:13px;
+
+  transition:.25s;
 }
 
 
@@ -2038,20 +1009,18 @@ footer p{
 }
 
 
-/* ================= RESPONSIVE ================= */
+/* =========================================================
+   RESPONSIVE
+========================================================= */
 
 @media (max-width:1100px){
 
-  .service-grid{
-    grid-template-columns:repeat(2,1fr);
+  nav{
+    gap:16px;
   }
 
-  .project-grid{
-    grid-template-columns:repeat(2,1fr);
-  }
-
-  .why-grid{
-    grid-template-columns:repeat(2,1fr);
+  .contact-grid{
+    gap:35px;
   }
 
 }
@@ -2085,6 +1054,10 @@ footer p{
   .map,
   .map iframe{
     min-height:320px;
+  }
+
+  .contact{
+    display:block;
   }
 
 }
@@ -2149,45 +1122,8 @@ footer p{
       1px solid rgba(255,255,255,.08);
   }
 
-  .hero{
-
-    min-height:auto;
-
-    padding:64px 20px 56px;
-  }
-
-  .hero p{
-    font-size:15px;
-  }
-
-  section{
+  .contact{
     padding:60px 5%;
-  }
-
-  .section-title{
-    margin-bottom:36px;
-  }
-
-  .about-list{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .experience{
-    grid-template-columns:1fr 1fr;
-  }
-
-  .form-row{
-    grid-template-columns:1fr;
-  }
-
-  .service-grid,
-  .project-grid,
-  .why-grid{
-    grid-template-columns:1fr;
-  }
-
-  .project{
-    height:300px;
   }
 
 }
@@ -2219,55 +1155,28 @@ footer p{
     padding:7px 11px;
   }
 
-  .hero-badge{
-
-    font-size:9px;
-
-    letter-spacing:0;
-
-    padding:7px 12px;
-
-    line-height:1.5;
-
-    white-space:normal;
+  .contact-info h2{
+    font-size:26px;
   }
 
-  body[dir="ltr"]
-  .hero-badge{
-    letter-spacing:.5px;
-  }
-
-  .hero-buttons{
-
-    width:100%;
-
-    flex-direction:column;
+  .contact-info>p{
+    font-size:15px;
   }
 
   .btn{
-
     width:100%;
-
-    margin:5px 0;
   }
 
-  .service-image{
-    height:210px;
-  }
-
-  .quote-box{
-    padding:22px 16px;
-  }
-
-  .contact-info h2{
-    font-size:26px;
+  .map,
+  .map iframe{
+    min-height:260px;
   }
 
   .floating-contact{
 
     left:10px;
 
-    bottom:82px;
+    bottom:18px;
 
     gap:8px;
   }
@@ -2294,30 +1203,6 @@ footer p{
     height:18px;
   }
 
-  .map,
-  .map iframe{
-    min-height:260px;
-  }
-
-  #topBtn{
-
-    left:10px;
-
-    bottom:18px;
-
-    width:40px;
-
-    height:40px;
-  }
-
-  body[dir="ltr"]
-  #topBtn{
-
-    left:auto;
-
-    right:10px;
-  }
-
 }
 
 
@@ -2331,39 +1216,34 @@ footer p{
     display:none;
   }
 
-  .about-list{
-    grid-template-columns:1fr;
-  }
-
-  .experience{
-    grid-template-columns:1fr;
-  }
-
-  .why-grid{
-    gap:12px;
-  }
-
-  .why-card{
-    padding:22px 14px;
-  }
-
 }
 
 </style>
 
-
 </head>
+
+
 <body>
-<header id="home">
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+<header>
 
   <div class="brand">
 
-    <img
-      src="/logo.png"
-      alt="شعار الرياض ابوكسي والدهانات"
-      width="48"
-      height="48"
-    >
+    <a href="/" aria-label="الرياض ابوكسي والدهانات">
+
+      <img
+        src="/logo.png"
+        alt="شعار الرياض ابوكسي والدهانات"
+        width="48"
+        height="48"
+      >
+
+    </a>
+
 
     <div class="logo">
 
@@ -2382,7 +1262,6 @@ footer p{
 
   <div class="header-right">
 
-
     <!-- LANGUAGE BUTTON -->
 
     <button
@@ -2399,6 +1278,7 @@ footer p{
         stroke-width="2"
         stroke-linecap="round"
         stroke-linejoin="round"
+        aria-hidden="true"
       >
 
         <circle
@@ -2422,15 +1302,21 @@ footer p{
     </button>
 
 
+    <!-- MOBILE MENU -->
+
     <button
       class="menu-btn"
       id="menuBtn"
+      type="button"
       aria-label="فتح قائمة التنقل"
       aria-expanded="false"
+      aria-controls="mainNav"
     >
       ☰
     </button>
 
+
+    <!-- NAVIGATION -->
 
     <nav id="mainNav">
 
@@ -2468,7 +1354,13 @@ footer p{
 
 </header>
 
+
+<!-- =========================================================
+     MAIN
+========================================================= -->
+
 <main>
+
 <section
   class="contact"
   id="contact"
@@ -2477,8 +1369,9 @@ footer p{
   <div class="contact-grid">
 
 
-    <div class="contact-info">
+    <!-- CONTACT INFORMATION -->
 
+    <div class="contact-info">
 
       <div
         class="section-label"
@@ -2488,9 +1381,9 @@ footer p{
       </div>
 
 
-      <h2 data-i18n="contactH2">
+      <h1 data-i18n="contactH2">
         لنناقش مشروعك
-      </h2>
+      </h1>
 
 
       <p data-i18n="contactP">
@@ -2500,12 +1393,13 @@ footer p{
       </p>
 
 
-      <div class="contact-item">
+      <!-- PHONE -->
 
+      <div class="contact-item">
 
         <div class="contact-icon">
 
-          <svg class="icon" viewBox="0 0 24 24">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
 
             <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.7 2.6a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6.2 6.2l1.3-1.3a2 2 0 0 1 2.1-.4c.8.4 1.7.6 2.6.7A2 2 0 0 1 22 16.9Z"></path>
 
@@ -2529,12 +1423,13 @@ footer p{
       </div>
 
 
-      <div class="contact-item">
+      <!-- WHATSAPP -->
 
+      <div class="contact-item">
 
         <div class="contact-icon">
 
-          <svg class="icon" viewBox="0 0 24 24">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
 
             <path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.5L4 20l.9-3.8A8.5 8.5 0 1 1 20.5 11.7Z"></path>
 
@@ -2564,12 +1459,13 @@ footer p{
       </div>
 
 
-      <div class="contact-item">
+      <!-- EMAIL -->
 
+      <div class="contact-item">
 
         <div class="contact-icon">
 
-          <svg class="icon" viewBox="0 0 24 24">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true">
 
             <rect
               x="3"
@@ -2601,6 +1497,8 @@ footer p{
       </div>
 
 
+      <!-- QUOTE BUTTON -->
+
       <a
         href="/quote"
         class="btn btn-primary"
@@ -2611,6 +1509,8 @@ footer p{
 
     </div>
 
+
+    <!-- GOOGLE MAP -->
 
     <div class="map">
 
@@ -2627,7 +1527,103 @@ footer p{
   </div>
 
 </section>
+
 </main>
+
+
+<!-- =========================================================
+     FLOATING CONTACT BUTTONS
+========================================================= -->
+
+<div
+  class="floating-contact"
+  aria-label="خيارات التواصل"
+>
+
+  <!-- WHATSAPP -->
+
+  <a
+    class="whatsapp"
+    href="https://wa.me/966508895356"
+    target="_blank"
+    rel="noopener noreferrer"
+    aria-label="التواصل عبر واتساب"
+    title="WhatsApp"
+  >
+
+    <svg
+      class="icon"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+
+      <path d="M20.5 11.7a8.5 8.5 0 0 1-12.6 7.5L4 20l.9-3.8A8.5 8.5 0 1 1 20.5 11.7Z"></path>
+
+      <path d="M8.8 8.4c.2-.4.4-.4.7-.4h.5c.2 0 .4.1.5.4l.6 1.4c.1.2.1.4 0 .6l-.5.7c-.1.1-.1.3 0 .5.5.9 1.2 1.6 2.1 2.1.2.1.4.1.5 0l.7-.5c.2-.1.4-.1.6 0l1.4.6c.3.1.4.3.4.5v.5c0 .3 0 .5-.4.7-.4.2-1.2.3-2.2-.1-1.1-.5-2.1-1.2-2.9-2-.8-.8-1.5-1.8-2-2.9-.4-1-.3-1.8-.1-2.1Z"></path>
+
+    </svg>
+
+  </a>
+
+
+  <!-- PHONE -->
+
+  <a
+    class="phone"
+    href="tel:+966508895356"
+    aria-label="الاتصال الهاتفي"
+    title="Phone"
+  >
+
+    <svg
+      class="icon"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+
+      <path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3.1 19.4 19.4 0 0 1-6-6A19.8 19.8 0 0 1 2.1 4.2 2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.3 1.8.7 2.6a2 2 0 0 1-.4 2.1L8.1 9.7a16 16 0 0 0 6.2 6.2l1.3-1.3a2 2 0 0 1 2.1-.4c.8.4 1.7.6 2.6.7A2 2 0 0 1 22 16.9Z"></path>
+
+    </svg>
+
+  </a>
+
+
+  <!-- EMAIL -->
+
+  <a
+    class="email"
+    href="mailto:janiiazaz@gmail.com"
+    aria-label="إرسال بريد إلكتروني"
+    title="Email"
+  >
+
+    <svg
+      class="icon"
+      viewBox="0 0 24 24"
+      aria-hidden="true"
+    >
+
+      <rect
+        x="3"
+        y="5"
+        width="18"
+        height="14"
+        rx="2"
+      ></rect>
+
+      <path d="m3 7 9 6 9-6"></path>
+
+    </svg>
+
+  </a>
+
+</div>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
 <footer>
 
   <div class="ksa-pattern"></div>
@@ -2654,52 +1650,31 @@ footer p{
 
   <div class="footer-links">
 
-    <a
-      href="/"
-      data-i18n="navHome"
-    >
+    <a href="/" data-i18n="navHome">
       الرئيسية
     </a>
 
-    <a
-      href="/services"
-      data-i18n="navServices"
-    >
+    <a href="/services" data-i18n="navServices">
       خدماتنا
     </a>
 
-    <a
-      href="/about"
-      data-i18n="navAbout"
-    >
+    <a href="/about" data-i18n="navAbout">
       من نحن
     </a>
 
-    <a
-      href="/projects"
-      data-i18n="navProjects"
-    >
+    <a href="/projects" data-i18n="navProjects">
       أعمالنا
     </a>
 
-    <a
-      href="/blogs.html"
-      data-i18n="navBlogs"
-    >
+    <a href="/blogs.html" data-i18n="navBlogs">
       المدونة
     </a>
 
-    <a
-      href="/quote"
-      data-i18n="navQuote"
-    >
+    <a href="/quote" data-i18n="navQuote">
       عرض سعر مجاني
     </a>
 
-    <a
-      href="/contact"
-      data-i18n="navContact"
-    >
+    <a href="/contact" data-i18n="navContact">
       تواصل معنا
     </a>
 
@@ -2738,13 +1713,13 @@ footer p{
   </p>
 
 </footer>
-<script>
 
+
+<script>
 
 /* =========================================================
    LANGUAGE DATA
 ========================================================= */
-
 
 const translations = {
 
@@ -2760,250 +1735,6 @@ const translations = {
     navBlogs:"المدونة",
     navQuote:"عرض سعر مجاني",
     navContact:"تواصل معنا",
-
-    heroBadge:
-      "خدمات دهانات وتشطيبات احترافية في الرياض",
-
-    heroH1a:"أرضيات ايبوكسي و",
-    heroH1b:"خدمات الدهان",
-    heroH1c:" في الرياض",
-
-    heroP:
-      "نوفر لكم أرضيات ايبوكسي، دهانات داخلية وخارجية، ديكورات جدارية، وتشطيبات داخلية للفلل والشقق والمنازل والمكاتب والمنشآت التجارية في جميع أنحاء الرياض.",
-
-    btnQuote:"اطلب عرض سعر مجاني",
-    btnWhatsapp:"تواصل عبر واتساب",
-
-    servicesLabel:"خدماتنا",
-
-    servicesH2:
-      "خدمات دهانات وتشطيبات احترافية في الرياض",
-
-    servicesP:
-      "من أرضيات الايبوكسي المتينة إلى الدهانات الداخلية الأنيقة والديكورات الجدارية، نقدم حلول عملية واحترافية لمشاريع تحسين المنازل والعقارات في الرياض.",
-
-    svc1Title:"أرضيات ايبوكسي",
-
-    svc1Desc:
-      "نوفر حلول أرضيات ايبوكسي احترافية تتميز بالمتانة وسهولة الصيانة والمظهر العصري النظيف. مناسبة للكراجات وورش العمل والفلل والمكاتب والمستودعات والمساحات التجارية في الرياض.",
-
-    svc2Title:"دهانات داخلية",
-
-    svc2Desc:
-      "تساعد خدمات الدهان الداخلي على تجديد غرف النوم والصالات والمجالس والشقق والفلل والمكاتب بتشطيبات جدارية نظيفة وجذابة، مع تحضير دقيق واختيار مناسب للألوان.",
-
-    svc3Title:"دهانات خارجية",
-
-    svc3Desc:
-      "الدهان الخارجي الاحترافي يحسّن مظهر وحماية الفلل والمباني، باستخدام دهانات مصممة لتحمّل أجواء المناخ السعودي القاسية.",
-
-    svc4Title:"ديكورات جدارية",
-
-    svc4Desc:
-      "الجدران المميزة والتشطيبات الديكورية والمعالجات الجدارية العصرية تضيف طابعاً خاصاً للصالات والمجالس وغرف النوم والمكاتب والفلل.",
-
-    svc5Title:"تشطيبات داخلية",
-
-    svc5Desc:
-      "نعمل على تفاصيل التشطيب للمساحات السكنية والتجارية، تشمل الأسطح الجدارية والمعالجات الديكورية والتحسينات النهائية لمظهر متقن.",
-
-    svc6Title:"دهانات الفلل والشقق",
-
-    svc6Desc:
-      "دهان كامل للغرف، تحضير الجدران، تجديد الألوان، تشطيبات ديكورية وتحسينات داخلية لمنزل نظيف وعصري ومتقن التشطيب.",
-
-    aboutLabel:"من نحن",
-
-    aboutH2:
-      "خدمات دهانات وتشطيبات احترافية في الرياض",
-
-    aboutP1:
-      "<strong>الرياض ابوكسي والدهانات</strong> شركة متخصصة في خدمات الدهان والتشطيب تخدم العملاء في جميع أنحاء الرياض. نقدم حلولاً عملية لأصحاب المنازل والفلل والشقق والمكاتب والمحلات ومشاريع تحسين العقارات.",
-
-    aboutP2:
-      "تشمل خدماتنا <strong>أرضيات الايبوكسي، الدهانات الداخلية، الدهانات الخارجية، الديكورات الجدارية والتشطيبات الداخلية.</strong> نحرص على تقديم تنفيذ نظيف وتشطيبات جذابة وحلول عملية تناسب متطلبات كل عقار.",
-
-    aboutP3:
-      "بالنسبة للعقارات السكنية، يساعد فريقنا في تحسين مظهر غرف النوم والصالات والمجالس والشقق والفلل. تُصمم حلول الدهان الخارجي لتجديد واجهات المباني، بينما تضيف خدمات الديكور الجداري طابعاً مميزاً للتصميم الداخلي.",
-
-    aboutP4:
-      "كما نوفر حلول أرضيات ايبوكسي للمساحات التي تتطلب سطحاً متيناً وسهل الصيانة — الكراجات وورش العمل والمكاتب والمستودعات وغيرها من المناطق التي تحتاج تشطيب أرضية قوي وعملي.",
-
-    aboutP5:
-      "يعتمد أسلوب عملنا على التحضير الدقيق والاهتمام بتفاصيل التشطيب والتواصل الواضح وفهم متطلبات العميل. سواء كنتم بحاجة لدهان غرفة واحدة أو تشطيب فيلا كاملة أو عمل ديكور جداري أو أرضيات ايبوكسي في الرياض، نحن جاهزون لمناقشة مشروعكم.",
-
-    chk1:"أرضيات ايبوكسي",
-    chk2:"دهانات داخلية",
-    chk3:"دهانات خارجية",
-    chk4:"ديكورات جدارية",
-    chk5:"تشطيبات داخلية",
-    chk6:"دهانات الفلل والشقق",
-
-    exp1Big:"الرياض",
-    exp1Small:"منطقة الخدمة",
-    exp2Small:"خدمات رئيسية",
-    exp3Big:"جودة",
-    exp3Small:"تركيزنا على التشطيب",
-
-    btnDiscuss:"ناقش مشروعك معنا",
-
-    projectsLabel:"أعمالنا",
-
-    projectsH2:
-      "مشاريع الدهان والايبوكسي والتشطيبات الداخلية",
-
-    projectsP:
-      "شاهدوا نماذج من أعمال الدهان والتشطيب الديكوري وأرضيات الايبوكسي وتحسين المساحات الداخلية التي نقدمها لعملائنا في الرياض.",
-
-    p1tag:"داخلي",
-    p1title:"دهان وتشطيب داخلي",
-
-    p2tag:"ديكور",
-    p2title:"جدار داخلي ديكوري",
-
-    p3tag:"ايبوكسي",
-    p3title:"تشطيب أرضية ايبوكسي",
-
-    p4tag:"فيلا",
-    p4title:"تحسين داخلي لفيلا",
-
-    p5tag:"تصميم جداري",
-    p5title:"ديكور حائط مميز",
-
-    p6tag:"شقة",
-    p6title:"تشطيب داخلي لشقة",
-
-    p7tag:"سكني",
-    p7title:"دهان سكني",
-
-    p8tag:"تشطيب",
-    p8title:"تشطيب جداري احترافي",
-
-    p9tag:"خارجي",
-    p9title:"دهان خارجي للعقار",
-
-    whyLabel:"مميزاتنا",
-
-    whyH2:
-      "لماذا تختار الرياض ابوكسي والدهانات؟",
-
-    whyP:
-      "نركز على الخدمة الاحترافية والتشطيب عالي الجودة والتواصل الواضح والحلول العملية لمشاريع تحسين المنازل والعقارات.",
-
-    why1Title:"جودة العمل",
-
-    why1Desc:
-      "نهتم بالتحضير والتطبيق وتفاصيل التشطيب في كل مشروع.",
-
-    why2Title:"خدمات متعددة",
-
-    why2Desc:
-      "الدهان وأرضيات الايبوكسي والديكور الجداري والتشطيب من مزود خدمة واحد.",
-
-    why3Title:"مقرنا في الرياض",
-
-    why3Desc:
-      "نخدم العملاء والعقارات في جميع أنحاء الرياض.",
-
-    why4Title:"تواصل سهل",
-
-    why4Desc:
-      "تواصلوا معنا مباشرة عبر واتساب أو الهاتف أو البريد الإلكتروني لمناقشة مشروعكم.",
-
-    faqLabel:"أسئلة شائعة",
-
-    faqH2:"الأسئلة الأكثر شيوعاً",
-
-    faqP:
-      "إجابات سريعة عن خدمات الدهان وأرضيات الايبوكسي والتشطيب في الرياض.",
-
-    faq1q:
-      "كم تكلفة أرضيات الايبوكسي في الرياض؟",
-
-    faq1a:
-      "تعتمد التكلفة على مساحة الأرضية وحالة السطح ونوع الطلاء. راسلونا عبر واتساب للحصول على عرض سعر مجاني حسب مساحتكم.",
-
-    faq2q:
-      "كم يستغرق دهان الداخل من الوقت؟",
-
-    faq2a:
-      "الغرفة العادية تستغرق عادة يوماً إلى يومين. الفلل أو الشقق الكاملة قد تستغرق عدة أيام حسب المساحة.",
-
-    faq3q:
-      "هل تغطون جميع مناطق الرياض؟",
-
-    faq3a:
-      "نعم، نغطي الفلل والشقق والمكاتب والعقارات التجارية في جميع أنحاء الرياض.",
-
-    seoLabel:"الدهان والتشطيب في الرياض",
-
-    seoH2:
-      "خدمات دهان وايبوكسي احترافية في الرياض",
-
-    seoP1:
-      "توفر الرياض ابوكسي والدهانات حلول دهان وأرضيات ايبوكسي وديكور جداري وتشطيب داخلي للعقارات في جميع أنحاء الرياض — مناسبة للفلل والشقق والمنازل والمكاتب والمحلات والكراجات ومشاريع تحسين العقارات الأخرى.",
-
-    seoH3a:"أرضيات ايبوكسي في الرياض",
-
-    seoP2:
-      "أرضيات الايبوكسي خيار عملي للحصول على سطح متين وجذاب وسهل التنظيف. نوفرها للكراجات وورش العمل والمكاتب وغيرها من المناطق التي تحتاج تشطيب أرضية قوي.",
-
-    seoH3b:"دهانات داخلية في الرياض",
-
-    seoP3:
-      "تعمل خدمات الدهان الداخلي لدينا على تجديد وتحسين المساحات المعيشية — الشقق والفلل وغرف النوم والصالات والمجالس والمكاتب — بتشطيبات جدارية نظيفة وجذابة.",
-
-    seoH3c:"دهانات خارجية في الرياض",
-
-    seoP4:
-      "تتعرض الجدران الخارجية للحرارة والغبار والشمس وتقلبات الطقس. الدهان الخارجي الاحترافي يحسّن مظهر العقار ويوفر طبقة حماية مجددة.",
-
-    seoH3d:
-      "الديكور الجداري والتشطيب الداخلي",
-
-    seoP5:
-      "تضيف التشطيبات الجدارية الديكورية والتشطيب الداخلي طابعاً وأناقة للمنازل العصرية — الجدران المميزة والصالات وغرف النوم والمجالس وغيرها من المساحات الداخلية.",
-
-    seoH3e:
-      "دهان الفلل والشقق",
-
-    seoP6:
-      "سواء كنتم تجددون شقة أو تحدّثون فيلا أو تجهزون عقاراً للسكن، تساعد خدمات الدهان والتشطيب لدينا على تحقيق بيئة نظيفة ومتقنة التشطيب.",
-
-    quoteLabel:"ابدأ مشروعك",
-
-    quoteH2:"احصل على عرض سعر مجاني",
-
-    quoteP:
-      "أخبرونا عن مشروع الدهان أو أرضيات الايبوكسي أو الديكور الجداري أو التشطيب، وتواصلوا معنا مباشرة عبر واتساب.",
-
-    lblName:"الاسم *",
-    phName:"اسمك",
-
-    lblPhone:"الجوال *",
-    phPhone:"رقم جوالك",
-
-    lblEmail:"البريد الإلكتروني",
-    phEmail:"بريدك الإلكتروني",
-
-    lblLocation:"موقع المشروع *",
-    phLocation:"موقع المشروع",
-
-    lblService:"الخدمة *",
-    optSelect:"اختر الخدمة",
-
-    optEpoxy:"أرضيات ايبوكسي",
-    optInterior:"دهانات داخلية",
-    optExterior:"دهانات خارجية",
-    optWall:"ديكورات جدارية",
-    optFinishing:"تشطيبات داخلية",
-    optVilla:"دهانات الفلل والشقق",
-    optOther:"أخرى",
-
-    lblDesc:"تفاصيل المشروع *",
-    phDesc:"اكتب وصفاً مختصراً لمشروعك...",
-
-    btnSend:"أرسل الطلب عبر واتساب",
 
     contactLabel:"تواصل معنا",
 
@@ -3043,250 +1774,6 @@ const translations = {
     navQuote:"Free Quote",
     navContact:"Contact",
 
-    heroBadge:
-      "PROFESSIONAL PAINTING & FINISHING SERVICES IN RIYADH",
-
-    heroH1a:"Epoxy Flooring &",
-    heroH1b:"Painting Services",
-    heroH1c:" in Riyadh",
-
-    heroP:
-      "Professional epoxy flooring, interior painting, exterior painting, wall decoration and interior finishing solutions for villas, apartments, homes, offices and commercial properties throughout Riyadh, Saudi Arabia.",
-
-    btnQuote:"Get a Free Quote",
-    btnWhatsapp:"WhatsApp Us",
-
-    servicesLabel:"Our Services",
-
-    servicesH2:
-      "Professional Painting & Finishing Services in Riyadh",
-
-    servicesP:
-      "From durable epoxy flooring to elegant interior painting and decorative wall finishes, we provide practical and professional solutions for residential and property improvement projects across Riyadh.",
-
-    svc1Title:"Epoxy Flooring",
-
-    svc1Desc:
-      "We provide professional epoxy flooring solutions designed for durability, easy maintenance and a clean modern appearance. Epoxy coatings are suitable for garages, workshops, villas, offices, warehouses, commercial spaces and other high-use areas in Riyadh.",
-
-    svc2Title:"Interior Painting",
-
-    svc2Desc:
-      "Our interior painting services help transform bedrooms, living rooms, majlis areas, apartments, villas and offices with clean and attractive wall finishes, using careful preparation and suitable colour choices.",
-
-    svc3Title:"Exterior Painting",
-
-    svc3Desc:
-      "Professional exterior painting improves the appearance and protection of villas and buildings, using coatings designed for surfaces exposed to the demanding Saudi climate.",
-
-    svc4Title:"Wall Decoration",
-
-    svc4Desc:
-      "Feature walls, decorative finishes and modern wall treatments add character to living rooms, majlis areas, bedrooms, offices and villas.",
-
-    svc5Title:"Interior Finishing",
-
-    svc5Desc:
-      "We work on finishing details for residential and commercial interiors, including wall surfaces, decorative treatments and finishing improvements for a refined final look.",
-
-    svc6Title:"Villa & Apartment Painting",
-
-    svc6Desc:
-      "Complete room painting, wall preparation, colour refreshes, decorative finishes and interior improvements for a clean, modern, well-finished home.",
-
-    aboutLabel:"About Us",
-
-    aboutH2:
-      "Professional Painting & Finishing Services in Riyadh",
-
-    aboutP1:
-      "<strong>Riyadh Epoxy and Painting</strong> is a professional painting and finishing service provider serving customers throughout Riyadh, Saudi Arabia. We provide practical solutions for homeowners, villa owners, apartment owners, offices, shops and property improvement projects.",
-
-    aboutP2:
-      "Our services include <strong>epoxy flooring, interior painting, exterior painting, wall decoration and interior finishing.</strong> We aim to deliver clean workmanship, attractive finishes and practical solutions that meet the individual requirements of each property.",
-
-    aboutP3:
-      "For residential properties, our team can help improve the appearance of bedrooms, living rooms, majlis areas, apartments, villas and other interior spaces. Our exterior painting solutions are designed to refresh building facades while our decorative wall services add character to modern interiors.",
-
-    aboutP4:
-      "We also provide epoxy flooring solutions for areas requiring a durable and easy-to-maintain surface — garages, workshops, offices, warehouses and other areas where a strong, practical floor finish is required.",
-
-    aboutP5:
-      "Our approach is based on careful preparation, attention to finishing details, clear communication and an understanding of the customer's requirements. Whether you need a single-room painting service, complete villa finishing, decorative wall work or epoxy flooring in Riyadh, we are available to discuss your project.",
-
-    chk1:"Epoxy Flooring",
-    chk2:"Interior Painting",
-    chk3:"Exterior Painting",
-    chk4:"Wall Decoration",
-    chk5:"Interior Finishing",
-    chk6:"Villa & Apartment Painting",
-
-    exp1Big:"Riyadh",
-    exp1Small:"Service Area",
-    exp2Small:"Main Services",
-    exp3Big:"Quality",
-    exp3Small:"Finishing Focus",
-
-    btnDiscuss:"Discuss Your Project",
-
-    projectsLabel:"Our Work",
-
-    projectsH2:
-      "Painting, Epoxy & Interior Finishing Projects",
-
-    projectsP:
-      "Explore examples of the type of painting, decorative finishing, epoxy flooring and interior improvement work we offer to customers in Riyadh.",
-
-    p1tag:"Interior",
-    p1title:"Interior Painting & Finishing",
-
-    p2tag:"Decoration",
-    p2title:"Decorative Interior Wall",
-
-    p3tag:"Epoxy",
-    p3title:"Epoxy Flooring Finish",
-
-    p4tag:"Villa",
-    p4title:"Villa Interior Improvement",
-
-    p5tag:"Wall Design",
-    p5title:"Feature Wall Decoration",
-
-    p6tag:"Apartment",
-    p6title:"Apartment Interior Finish",
-
-    p7tag:"Residential",
-    p7title:"Residential Painting",
-
-    p8tag:"Finishing",
-    p8title:"Professional Wall Finish",
-
-    p9tag:"Exterior",
-    p9title:"Exterior Property Painting",
-
-    whyLabel:"Our Advantage",
-
-    whyH2:
-      "Why Choose Riyadh Epoxy and Painting?",
-
-    whyP:
-      "We focus on professional service, quality finishing, clear communication and practical solutions for residential and property improvement projects.",
-
-    why1Title:"Quality Work",
-
-    why1Desc:
-      "We pay attention to preparation, application and finishing details throughout each project.",
-
-    why2Title:"Multiple Services",
-
-    why2Desc:
-      "Painting, epoxy flooring, wall decoration and finishing solutions from one service provider.",
-
-    why3Title:"Riyadh Based",
-
-    why3Desc:
-      "We serve customers and properties throughout Riyadh, Saudi Arabia.",
-
-    why4Title:"Easy Communication",
-
-    why4Desc:
-      "Contact us directly through WhatsApp, phone or email to discuss your project.",
-
-    faqLabel:"Common Questions",
-
-    faqH2:"Frequently Asked Questions",
-
-    faqP:
-      "Quick answers about our painting, epoxy flooring and finishing services in Riyadh.",
-
-    faq1q:
-      "How much does epoxy flooring cost in Riyadh?",
-
-    faq1a:
-      "Cost depends on floor area, surface condition and coating type. Message us on WhatsApp for a free quote based on your space.",
-
-    faq2q:
-      "How long does interior painting take?",
-
-    faq2a:
-      "A standard room usually takes one to two days. Full villas or apartments may take several days depending on size.",
-
-    faq3q:
-      "Do you serve all areas of Riyadh?",
-
-    faq3a:
-      "Yes, we cover villas, apartments, offices and commercial properties across Riyadh, Saudi Arabia.",
-
-    seoLabel:"Painting & Finishing in Riyadh",
-
-    seoH2:
-      "Professional Painting and Epoxy Services in Riyadh",
-
-    seoP1:
-      "Riyadh Epoxy and Painting provides professional painting, epoxy flooring, wall decoration and interior finishing solutions for properties across Riyadh, Saudi Arabia — suitable for villas, apartments, houses, offices, shops, garages and other property improvement projects.",
-
-    seoH3a:"Epoxy Flooring in Riyadh",
-
-    seoP2:
-      "Epoxy flooring is a practical choice for a durable, attractive and easy-to-clean surface. We provide epoxy flooring for garages, workshops, offices and other areas where a strong floor finish is required.",
-
-    seoH3b:"Interior Painting in Riyadh",
-
-    seoP3:
-      "Our interior painting services refresh and improve living spaces — apartments, villas, bedrooms, living rooms, majlis areas and offices — with clean and attractive wall finishes.",
-
-    seoH3c:"Exterior Painting in Riyadh",
-
-    seoP4:
-      "Exterior walls are exposed to heat, dust, sunlight and changing weather. Professional exterior painting improves a property's appearance and provides a refreshed protective coating.",
-
-    seoH3d:
-      "Wall Decoration & Interior Finishing",
-
-    seoP5:
-      "Decorative wall finishes and interior finishing add character and style to modern homes — feature walls, living spaces, bedrooms, majlis areas and other interiors.",
-
-    seoH3e:
-      "Villa and Apartment Painting",
-
-    seoP6:
-      "Whether renovating an apartment, refreshing a villa or preparing a property for occupancy, our painting and finishing services help create a clean, professionally finished environment.",
-
-    quoteLabel:"Start Your Project",
-
-    quoteH2:"Get a Free Quote",
-
-    quoteP:
-      "Tell us about your painting, epoxy flooring, wall decoration or finishing project and contact us directly through WhatsApp.",
-
-    lblName:"Name *",
-    phName:"Your name",
-
-    lblPhone:"Phone *",
-    phPhone:"Your phone number",
-
-    lblEmail:"Email",
-    phEmail:"Your email",
-
-    lblLocation:"Project Location *",
-    phLocation:"Project location",
-
-    lblService:"Service *",
-    optSelect:"Select a service",
-
-    optEpoxy:"Epoxy Flooring",
-    optInterior:"Interior Painting",
-    optExterior:"Exterior Painting",
-    optWall:"Wall Decoration",
-    optFinishing:"Interior Finishing",
-    optVilla:"Villa & Apartment Painting",
-    optOther:"Other",
-
-    lblDesc:"Project Details *",
-    phDesc:"Briefly describe your project...",
-
-    btnSend:"Send Request via WhatsApp",
-
     contactLabel:"Contact Us",
 
     contactH2:"Let's Discuss Your Project",
@@ -3316,7 +1803,6 @@ const translations = {
 
 /* =========================================================
    CURRENT LANGUAGE
-   ARABIC IS DEFAULT
 ========================================================= */
 
 let currentLang = "ar";
@@ -3327,6 +1813,11 @@ let currentLang = "ar";
 ========================================================= */
 
 function applyLang(lang){
+
+  if(!translations[lang]){
+    return;
+  }
+
 
   currentLang = lang;
 
@@ -3349,10 +1840,18 @@ function applyLang(lang){
       : "ltr";
 
 
-  document.getElementById("langLabel").textContent =
-    lang === "ar"
-      ? "English"
-      : "العربية";
+  const langLabel =
+    document.getElementById("langLabel");
+
+
+  if(langLabel){
+
+    langLabel.textContent =
+      lang === "ar"
+        ? "English"
+        : "العربية";
+
+  }
 
 
   document
@@ -3368,8 +1867,14 @@ function applyLang(lang){
 
       if(value !== undefined){
 
+        /*
+         * Only use innerHTML when translation
+         * intentionally contains HTML.
+         */
+
         if(
-          value.includes("<strong>")
+          value.includes("<strong>") ||
+          value.includes("<br")
         ){
 
           el.innerHTML = value;
@@ -3385,77 +1890,16 @@ function applyLang(lang){
     });
 
 
-  document
-    .querySelectorAll("[data-i18n-ph]")
-    .forEach(function(el){
-
-      const key =
-        el.getAttribute("data-i18n-ph");
-
-      const value =
-        translations[lang][key];
-
-
-      if(value !== undefined){
-
-        el.setAttribute(
-          "placeholder",
-          value
-        );
-
-      }
-
-    });
-
-
-  document
-    .querySelectorAll("#service option[data-i18n]")
-    .forEach(function(option){
-
-      const key =
-        option.getAttribute("data-i18n");
-
-      if(
-        translations[lang][key] !== undefined
-      ){
-
-        option.textContent =
-          translations[lang][key];
-
-      }
-
-    });
-
-
-  document
-    .querySelectorAll("[data-i18n]")
-    .forEach(function(el){
-
-      if(el.tagName === "IMG"){
-
-        const key =
-          el.getAttribute("data-i18n");
-
-        if(
-          translations[lang][key] !== undefined
-        ){
-
-          el.alt =
-            translations[lang][key];
-
-        }
-
-      }
-
-    });
-
+  /*
+   * Update document title.
+   */
 
   document.title =
     lang === "ar"
 
-      ? "الرياض ابوكسي والدهانات | أرضيات ايبوكسي ودهانات في الرياض"
+      ? "تواصل معنا | الرياض ابوكسي والدهانات"
 
-      : "Riyadh Epoxy and Painting | Epoxy Flooring & Painting Services in Riyadh";
+      : "Contact Us | Riyadh Epoxy and Painting";
 
 
   updateAccessibility(lang);
@@ -3464,7 +1908,7 @@ function applyLang(lang){
 
 
 /* =========================================================
-   ACCESSIBILITY TEXT
+   ACCESSIBILITY
 ========================================================= */
 
 function updateAccessibility(lang){
@@ -3475,43 +1919,48 @@ function updateAccessibility(lang){
   const langToggle =
     document.getElementById("langToggle");
 
-  const topBtn =
-    document.getElementById("topBtn");
-
 
   if(lang === "ar"){
 
-    menuBtn.setAttribute(
-      "aria-label",
-      "فتح قائمة التنقل"
-    );
+    if(menuBtn){
 
-    langToggle.setAttribute(
-      "aria-label",
-      "تغيير اللغة"
-    );
+      menuBtn.setAttribute(
+        "aria-label",
+        "فتح قائمة التنقل"
+      );
 
-    topBtn.setAttribute(
-      "aria-label",
-      "العودة إلى الأعلى"
-    );
+    }
+
+
+    if(langToggle){
+
+      langToggle.setAttribute(
+        "aria-label",
+        "تغيير اللغة"
+      );
+
+    }
 
   }else{
 
-    menuBtn.setAttribute(
-      "aria-label",
-      "Open navigation menu"
-    );
+    if(menuBtn){
 
-    langToggle.setAttribute(
-      "aria-label",
-      "Switch language"
-    );
+      menuBtn.setAttribute(
+        "aria-label",
+        "Open navigation menu"
+      );
 
-    topBtn.setAttribute(
-      "aria-label",
-      "Scroll back to top"
-    );
+    }
+
+
+    if(langToggle){
+
+      langToggle.setAttribute(
+        "aria-label",
+        "Switch language"
+      );
+
+    }
 
   }
 
@@ -3529,280 +1978,72 @@ const mainNav =
   document.getElementById("mainNav");
 
 
-menuBtn.addEventListener(
-  "click",
-  function(){
+if(menuBtn && mainNav){
 
-    const opened =
-      mainNav.classList.toggle("active");
+  menuBtn.addEventListener(
+    "click",
+    function(){
 
-
-    menuBtn.setAttribute(
-      "aria-expanded",
-      opened
-    );
+      const opened =
+        mainNav.classList.toggle("active");
 
 
-    menuBtn.innerHTML =
-      opened
-        ? "✕"
-        : "☰";
-
-  }
-);
-
-
-document
-  .querySelectorAll("#mainNav a")
-  .forEach(function(link){
-
-    link.addEventListener(
-      "click",
-      function(){
-
-        mainNav.classList.remove(
-          "active"
-        );
-
-        menuBtn.setAttribute(
-          "aria-expanded",
-          "false"
-        );
-
-        menuBtn.innerHTML =
-          "☰";
-
-      }
-    );
-
-  });
-
-
-/* =========================================================
-   FAQ ACCORDION
-========================================================= */
-
-document
-  .querySelectorAll(".faq-item")
-  .forEach(function(item){
-
-    const q =
-      item.querySelector(".faq-q");
-
-
-    q.addEventListener(
-      "click",
-      function(){
-
-        document
-          .querySelectorAll(".faq-item")
-          .forEach(function(other){
-
-            if(other !== item){
-
-              other.classList.remove(
-                "open"
-              );
-
-            }
-
-          });
-
-
-        item.classList.toggle(
-          "open"
-        );
-
-      }
-    );
-
-  });
-
-
-/* =========================================================
-   WHATSAPP QUOTE FORM
-========================================================= */
-
-const quoteForm =
-  document.getElementById("quoteForm");
-
-
-quoteForm.addEventListener(
-  "submit",
-  function(event){
-
-    event.preventDefault();
-
-
-    const name =
-      document
-        .getElementById("name")
-        .value
-        .trim();
-
-
-    const phone =
-      document
-        .getElementById("phone")
-        .value
-        .trim();
-
-
-    const email =
-      document
-        .getElementById("email")
-        .value
-        .trim();
-
-
-    const location =
-      document
-        .getElementById("location")
-        .value
-        .trim();
-
-
-    const serviceSelect =
-      document.getElementById("service");
-
-
-    const service =
-      serviceSelect
-        .options[
-          serviceSelect.selectedIndex
-        ]
-        .text;
-
-
-    const description =
-      document
-        .getElementById("description")
-        .value
-        .trim();
-
-
-    if(
-      !name ||
-      !phone ||
-      !location ||
-      !service ||
-      !description
-    ){
-
-      alert(
-        currentLang === "ar"
-
-          ? "الرجاء تعبئة جميع الحقول المطلوبة."
-
-          : "Please complete all required fields."
+      menuBtn.setAttribute(
+        "aria-expanded",
+        opened ? "true" : "false"
       );
 
-      return;
+
+      menuBtn.innerHTML =
+        opened
+          ? "✕"
+          : "☰";
 
     }
+  );
 
 
-    let message;
+  document
+    .querySelectorAll("#mainNav a")
+    .forEach(function(link){
+
+      link.addEventListener(
+        "click",
+        function(){
+
+          mainNav.classList.remove(
+            "active"
+          );
 
 
-    if(currentLang === "ar"){
-
-      message =
-`مرحباً، أرغب في طلب عرض سعر مجاني.
-
-*الاسم:* ${name}
-*الجوال:* ${phone}
-*البريد الإلكتروني:* ${email || "غير متوفر"}
-*موقع المشروع:* ${location}
-*الخدمة:* ${service}
-*تفاصيل المشروع:*
-${description}`;
-
-    }else{
-
-      message =
-`Hello, I would like to request a free quote.
-
-*Name:* ${name}
-*Phone:* ${phone}
-*Email:* ${email || "Not provided"}
-*Project Location:* ${location}
-*Service:* ${service}
-*Project Details:*
-${description}`;
-
-    }
+          menuBtn.setAttribute(
+            "aria-expanded",
+            "false"
+          );
 
 
-    const whatsappURL =
-      "https://wa.me/966508895356?text=" +
-      encodeURIComponent(message);
+          menuBtn.innerHTML =
+            "☰";
 
-
-    window.open(
-      whatsappURL,
-      "_blank",
-      "noopener,noreferrer"
-    );
-
-  }
-);
-
-
-/* =========================================================
-   SCROLL TO TOP
-========================================================= */
-
-const topBtn =
-  document.getElementById("topBtn");
-
-
-window.addEventListener(
-  "scroll",
-  function(){
-
-    topBtn.style.display =
-      window.scrollY > 500
-        ? "block"
-        : "none";
-
-  }
-);
-
-
-topBtn.addEventListener(
-  "click",
-  function(){
-
-    window.scrollTo({
-
-      top:0,
-
-      behavior:"smooth"
+        }
+      );
 
     });
 
-  }
-);
-
-
-/* =========================================================
-   CURRENT YEAR
-========================================================= */
-
-document.getElementById(
-  "year"
-).textContent =
-  new Date().getFullYear();
+}
 
 
 /* =========================================================
    LANGUAGE TOGGLE
 ========================================================= */
 
-document
-  .getElementById("langToggle")
-  .addEventListener(
+const langToggle =
+  document.getElementById("langToggle");
+
+
+if(langToggle){
+
+  langToggle.addEventListener(
     "click",
     function(){
 
@@ -3815,14 +2056,33 @@ document
     }
   );
 
+}
+
 
 /* =========================================================
-   IMPORTANT:
-   APPLY ARABIC IMMEDIATELY ON PAGE LOAD
+   CURRENT YEAR
+========================================================= */
+
+const yearElement =
+  document.getElementById("year");
+
+
+if(yearElement){
+
+  yearElement.textContent =
+    new Date().getFullYear();
+
+}
+
+
+/* =========================================================
+   APPLY DEFAULT LANGUAGE
 ========================================================= */
 
 applyLang("ar");
 
+
 </script>
+
 </body>
 </html>
