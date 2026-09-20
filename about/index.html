@@ -3491,37 +3491,49 @@ function updateAccessibility(lang){
 
   if(lang === "ar"){
 
-    menuBtn.setAttribute(
-      "aria-label",
-      "فتح قائمة التنقل"
-    );
+    if(menuBtn){
+      menuBtn.setAttribute(
+        "aria-label",
+        "فتح قائمة التنقل"
+      );
+    }
 
-    langToggle.setAttribute(
-      "aria-label",
-      "تغيير اللغة"
-    );
+    if(langToggle){
+      langToggle.setAttribute(
+        "aria-label",
+        "تغيير اللغة"
+      );
+    }
 
-    topBtn.setAttribute(
-      "aria-label",
-      "العودة إلى الأعلى"
-    );
+    if(topBtn){
+      topBtn.setAttribute(
+        "aria-label",
+        "العودة إلى الأعلى"
+      );
+    }
 
   }else{
 
-    menuBtn.setAttribute(
-      "aria-label",
-      "Open navigation menu"
-    );
+    if(menuBtn){
+      menuBtn.setAttribute(
+        "aria-label",
+        "Open navigation menu"
+      );
+    }
 
-    langToggle.setAttribute(
-      "aria-label",
-      "Switch language"
-    );
+    if(langToggle){
+      langToggle.setAttribute(
+        "aria-label",
+        "Switch language"
+      );
+    }
 
-    topBtn.setAttribute(
-      "aria-label",
-      "Scroll back to top"
-    );
+    if(topBtn){
+      topBtn.setAttribute(
+        "aria-label",
+        "Scroll back to top"
+      );
+    }
 
   }
 
@@ -3636,6 +3648,7 @@ document
 const quoteForm =
   document.getElementById("quoteForm");
 
+if(quoteForm){
 
 quoteForm.addEventListener(
   "submit",
@@ -3759,6 +3772,8 @@ ${description}`;
 );
 
 
+}
+
 /* =========================================================
    SCROLL TO TOP
 ========================================================= */
@@ -3766,6 +3781,7 @@ ${description}`;
 const topBtn =
   document.getElementById("topBtn");
 
+if(topBtn){
 
 window.addEventListener(
   "scroll",
@@ -3794,6 +3810,8 @@ topBtn.addEventListener(
 
   }
 );
+
+}
 
 
 /* =========================================================
